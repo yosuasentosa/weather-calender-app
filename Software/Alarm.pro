@@ -1,4 +1,5 @@
-QT       += core gui
+QT       += core gui \
+            multimedia
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -17,15 +18,21 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    snooze.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    snooze.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    snooze.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
 else: unix:!android: target.path = /opt/$${TARGET}/bin
 !isEmpty(target.path): INSTALLS += target
+
+RESOURCES += \
+    res.qrc

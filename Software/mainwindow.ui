@@ -17,10 +17,10 @@
    <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>20</y>
+      <x>20</x>
+      <y>10</y>
       <width>361</width>
-      <height>191</height>
+      <height>201</height>
      </rect>
     </property>
     <property name="currentIndex">
@@ -34,8 +34,8 @@
       <property name="geometry">
        <rect>
         <x>10</x>
-        <y>10</y>
-        <width>241</width>
+        <y>0</y>
+        <width>281</width>
         <height>91</height>
        </rect>
       </property>
@@ -99,7 +99,7 @@
        <rect>
         <x>10</x>
         <y>10</y>
-        <width>241</width>
+        <width>291</width>
         <height>91</height>
        </rect>
       </property>
@@ -142,19 +142,6 @@
      </widget>
     </widget>
    </widget>
-   <widget class="QLabel" name="label_3">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>220</y>
-      <width>361</width>
-      <height>321</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Calender</string>
-    </property>
-   </widget>
    <widget class="QFrame" name="frame">
     <property name="geometry">
      <rect>
@@ -175,7 +162,7 @@
       <rect>
        <x>10</x>
        <y>90</y>
-       <width>371</width>
+       <width>381</width>
        <height>91</height>
       </rect>
      </property>
@@ -280,17 +267,17 @@
        <x>10</x>
        <y>190</y>
        <width>256</width>
-       <height>192</height>
+       <height>341</height>
       </rect>
      </property>
     </widget>
     <widget class="QPushButton" name="removebutton">
      <property name="geometry">
       <rect>
-       <x>290</x>
-       <y>220</y>
-       <width>75</width>
-       <height>23</height>
+       <x>280</x>
+       <y>230</y>
+       <width>111</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="text">
@@ -300,10 +287,10 @@
     <widget class="QPushButton" name="addButton">
      <property name="geometry">
       <rect>
-       <x>290</x>
+       <x>280</x>
        <y>190</y>
-       <width>75</width>
-       <height>23</height>
+       <width>111</width>
+       <height>31</height>
       </rect>
      </property>
      <property name="text">
@@ -314,7 +301,7 @@
      <property name="geometry">
       <rect>
        <x>110</x>
-       <y>30</y>
+       <y>50</y>
        <width>231</width>
        <height>31</height>
       </rect>
@@ -333,6 +320,78 @@
       <string>Date and Time</string>
      </property>
     </widget>
+    <widget class="QPushButton" name="pushButton_3">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>270</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Test Snooze</string>
+     </property>
+    </widget>
+    <widget class="QTimeEdit" name="timeEdit">
+     <property name="geometry">
+      <rect>
+       <x>110</x>
+       <y>10</y>
+       <width>121</width>
+       <height>31</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="testAlarmBtn">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>310</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Test Alarm</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_4">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>350</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Test TurnOff Snooze</string>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="pushButton_5">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>390</y>
+       <width>111</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>testAlarm</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QCalendarWidget" name="calendarWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>230</y>
+      <width>361</width>
+      <height>311</height>
+     </rect>
+    </property>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
