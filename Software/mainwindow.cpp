@@ -25,6 +25,7 @@ MainWindow::MainWindow(QWidget *parent)
     timerAlarm = new QTimer(this);//Timer für Alarm einstellen
 
     timertest = new QTimer(this);//timer für Snooze einstellen
+
 }
 
 MainWindow::~MainWindow()
@@ -50,6 +51,7 @@ void MainWindow::on_addButton_clicked()
     abc = ui->timeEdit->text();
     ui->listWidget->addItem(abc);
     ui->label_6->setText(abc);
+    ui->listWidget->setCurrentRow(1);
 }
 
 //Item in ListWidget entfernen
@@ -83,7 +85,7 @@ void MainWindow::testalarm()
 {
     QTime time = QTime::currentTime();
     QString timestring = time.toString("hh.mm");
-    QListWidgetItem *savedtime = ui->listWidget->currentItem();
+    QListWidgetItem *savedtime = ui->listWidget->item(0);
     QString savedtimestring = savedtime->text();
     if(timestring == savedtimestring)
     {
@@ -101,10 +103,13 @@ void MainWindow::on_pushButton_4_clicked()
 {
     timertest->stop();
     timerAlarm->stop();
+    ui->label_3->setText("Alarm is currently deactivated");
 }
 
 void MainWindow::on_pushButton_5_clicked()
 {
     connect(timerAlarm, SIGNAL(timeout()), this, SLOT(testalarm()));
     timerAlarm->start(1000);
+    ui->label_3->setText("Alarm is activated");
 }
+
