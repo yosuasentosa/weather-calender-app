@@ -22,7 +22,6 @@ public slots:
     void timenow();
 
 private slots:
-    void on_snoozebtn_clicked();
 
     void on_dismissbtn_clicked();
 

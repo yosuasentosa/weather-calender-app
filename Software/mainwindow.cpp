@@ -72,9 +72,15 @@ void MainWindow::on_addButton_clicked()
 //Item in ListWidget entfernen
 void MainWindow::on_removebutton_clicked()
 {
-    int def;
-    def = ui->listWidget->currentRow();
-    ui->listWidget->takeItem(def);
+    timertest->stop();
+    timerAlarm->stop();
+    ui->listWidget->clear();
+    ui->pushButton_3->setEnabled(false);
+    ui->pushButton_4->setEnabled(false);
+    ui->pushButton_5->setEnabled(false);
+    ui->removebutton->setEnabled(false);
+    ui->testAlarmBtn->setEnabled(false);
+    ui->label_3->setText("Alarm is currently deactivated");
 }
 
 //TestSnooze
@@ -93,7 +99,7 @@ void MainWindow::showsnooze()
 void MainWindow::snooze()
 {
     connect(timertest, SIGNAL(timeout()), this, SLOT(showsnooze()));
-    timertest->start(5000);//5sec
+    timertest->start(300000);//5mins
 }
 
 //überprüft ob die gewünschte Zeit für Alarm gleich wie die Aktuelle Zeit sind
@@ -103,33 +109,11 @@ void MainWindow::testalarm()
     QString timestring = time.toString("hh.mm");
     QListWidgetItem *savedtime = ui->listWidget->item(0);
     QString savedtimestring = savedtime->text();
-    QListWidgetItem *savedtime1 = ui->listWidget->item(1);
-    QString savedtimestring1 = savedtime1->text();
-    QListWidgetItem *savedtime2 = ui->listWidget->item(2);
-    QString savedtimestring2 = savedtime2->text();
-    QListWidgetItem *savedtime3 = ui->listWidget->item(3);
-    QString savedtimestring3 = savedtime3->text();
-    QListWidgetItem *savedtime4 = ui->listWidget->item(4);
-    QString savedtimestring4 = savedtime4->text();
     if(timestring == savedtimestring)
     {
         showsnooze();
-    }
-    else if(timestring == savedtimestring1)
-    {
-        showsnooze();
-    }
-    else if(timestring == savedtimestring2)
-    {
-        showsnooze();
-    }
-    else if(timestring == savedtimestring3)
-    {
-        showsnooze();
-    }
-    else if(timestring == savedtimestring4)
-    {
-        showsnooze();
+        snooze();
+        timerAlarm->stop();
     }
 }
 

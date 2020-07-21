@@ -118,125 +118,21 @@
     <property name="frameShadow">
      <enum>QFrame::Raised</enum>
     </property>
-    <widget class="QGroupBox" name="groupBox">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>200</y>
-       <width>381</width>
-       <height>91</height>
-      </rect>
-     </property>
-     <property name="title">
-      <string>Repeat every</string>
-     </property>
-     <widget class="QCheckBox" name="chkMon">
-      <property name="geometry">
-       <rect>
-        <x>20</x>
-        <y>30</y>
-        <width>86</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Monday</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chkTues">
-      <property name="geometry">
-       <rect>
-        <x>110</x>
-        <y>30</y>
-        <width>86</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Tuesday</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chkWed">
-      <property name="geometry">
-       <rect>
-        <x>190</x>
-        <y>30</y>
-        <width>91</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Wednesday</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chkThurs">
-      <property name="geometry">
-       <rect>
-        <x>280</x>
-        <y>30</y>
-        <width>86</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Thursday</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chkFri">
-      <property name="geometry">
-       <rect>
-        <x>60</x>
-        <y>60</y>
-        <width>86</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Friday</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chkSat">
-      <property name="geometry">
-       <rect>
-        <x>150</x>
-        <y>60</y>
-        <width>86</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Saturday</string>
-      </property>
-     </widget>
-     <widget class="QCheckBox" name="chkSun">
-      <property name="geometry">
-       <rect>
-        <x>250</x>
-        <y>60</y>
-        <width>86</width>
-        <height>23</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Sunday</string>
-      </property>
-     </widget>
-    </widget>
     <widget class="QListWidget" name="listWidget">
      <property name="geometry">
       <rect>
-       <x>10</x>
-       <y>300</y>
-       <width>261</width>
-       <height>221</height>
+       <x>20</x>
+       <y>200</y>
+       <width>361</width>
+       <height>21</height>
       </rect>
      </property>
     </widget>
     <widget class="QPushButton" name="removebutton">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>340</y>
+       <x>20</x>
+       <y>230</y>
        <width>111</width>
        <height>31</height>
       </rect>
@@ -248,8 +144,8 @@
     <widget class="QPushButton" name="addButton">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>300</y>
+       <x>250</x>
+       <y>120</y>
        <width>111</width>
        <height>31</height>
       </rect>
@@ -274,8 +170,8 @@
     <widget class="QPushButton" name="pushButton_3">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>380</y>
+       <x>150</x>
+       <y>230</y>
        <width>111</width>
        <height>31</height>
       </rect>
@@ -297,8 +193,8 @@
     <widget class="QPushButton" name="testAlarmBtn">
      <property name="geometry">
       <rect>
-       <x>280</x>
-       <y>420</y>
+       <x>270</x>
+       <y>230</y>
        <width>111</width>
        <height>31</height>
       </rect>
@@ -330,7 +226,7 @@
       </rect>
      </property>
      <property name="text">
-      <string>testAlarm</string>
+      <string>Activate Alarm</string>
      </property>
     </widget>
     <widget class="QLabel" name="label_3">

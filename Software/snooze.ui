@@ -31,24 +31,11 @@
     <string>00:00:00</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="snoozebtn">
-   <property name="geometry">
-    <rect>
-     <x>160</x>
-     <y>140</y>
-     <width>75</width>
-     <height>23</height>
-    </rect>
-   </property>
-   <property name="text">
-    <string>Snooze</string>
-   </property>
-  </widget>
   <widget class="QPushButton" name="dismissbtn">
    <property name="geometry">
     <rect>
      <x>160</x>
-     <y>180</y>
+     <y>160</y>
      <width>75</width>
      <height>23</height>
     </rect>

@@ -49,11 +49,6 @@ void Snooze::timenow()
 //    Snooze::close();
 //}
 
-void Snooze::on_snoozebtn_clicked()
-{
-   Snooze::open();
-}
-
 void Snooze::on_dismissbtn_clicked()
 {
     terminatealarm();
