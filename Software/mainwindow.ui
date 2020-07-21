@@ -24,7 +24,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab">
      <attribute name="title">
@@ -48,32 +48,6 @@
       </property>
       <property name="text">
        <string>00:00:00</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="ortLabel">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>110</y>
-        <width>47</width>
-        <height>13</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Standort</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="tempLabel">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>130</y>
-        <width>47</width>
-        <height>13</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>TextLabel</string>
       </property>
      </widget>
     </widget>
@@ -160,7 +134,7 @@
       <property name="geometry">
        <rect>
         <x>20</x>
-        <y>20</y>
+        <y>30</y>
         <width>86</width>
         <height>23</height>
        </rect>
@@ -173,7 +147,7 @@
       <property name="geometry">
        <rect>
         <x>110</x>
-        <y>20</y>
+        <y>30</y>
         <width>86</width>
         <height>23</height>
        </rect>
@@ -186,7 +160,7 @@
       <property name="geometry">
        <rect>
         <x>190</x>
-        <y>20</y>
+        <y>30</y>
         <width>91</width>
         <height>23</height>
        </rect>
@@ -199,7 +173,7 @@
       <property name="geometry">
        <rect>
         <x>280</x>
-        <y>20</y>
+        <y>30</y>
         <width>86</width>
         <height>23</height>
        </rect>
@@ -212,7 +186,7 @@
       <property name="geometry">
        <rect>
         <x>60</x>
-        <y>50</y>
+        <y>60</y>
         <width>86</width>
         <height>23</height>
        </rect>
@@ -225,7 +199,7 @@
       <property name="geometry">
        <rect>
         <x>150</x>
-        <y>50</y>
+        <y>60</y>
         <width>86</width>
         <height>23</height>
        </rect>
@@ -238,7 +212,7 @@
       <property name="geometry">
        <rect>
         <x>250</x>
-        <y>50</y>
+        <y>60</y>
         <width>86</width>
         <height>23</height>
        </rect>
@@ -382,7 +356,7 @@
       </rect>
      </property>
      <property name="autoFillBackground">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <property name="styleSheet">
       <string notr="true">background-color: rgb();</string>
