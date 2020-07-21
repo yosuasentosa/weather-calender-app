@@ -50,20 +50,7 @@
        <string>00:00:00</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_4">
-      <property name="geometry">
-       <rect>
-        <x>10</x>
-        <y>90</y>
-        <width>47</width>
-        <height>13</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>Wetter</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label_5">
+     <widget class="QLabel" name="ortLabel">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -76,7 +63,7 @@
        <string>Standort</string>
       </property>
      </widget>
-     <widget class="QLabel" name="label_6">
+     <widget class="QLabel" name="tempLabel">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -161,7 +148,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>90</y>
+       <y>200</y>
        <width>381</width>
        <height>91</height>
       </rect>
@@ -265,7 +252,7 @@
      <property name="geometry">
       <rect>
        <x>10</x>
-       <y>200</y>
+       <y>300</y>
        <width>261</width>
        <height>221</height>
       </rect>
@@ -275,7 +262,7 @@
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>240</y>
+       <y>340</y>
        <width>111</width>
        <height>31</height>
       </rect>
@@ -288,7 +275,7 @@
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>200</y>
+       <y>300</y>
        <width>111</width>
        <height>31</height>
       </rect>
@@ -301,7 +288,7 @@
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>20</y>
+       <y>130</y>
        <width>91</width>
        <height>16</height>
       </rect>
@@ -314,7 +301,7 @@
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>280</y>
+       <y>380</y>
        <width>111</width>
        <height>31</height>
       </rect>
@@ -327,7 +314,7 @@
      <property name="geometry">
       <rect>
        <x>110</x>
-       <y>10</y>
+       <y>120</y>
        <width>121</width>
        <height>31</height>
       </rect>
@@ -337,7 +324,7 @@
      <property name="geometry">
       <rect>
        <x>280</x>
-       <y>320</y>
+       <y>420</y>
        <width>111</width>
        <height>31</height>
       </rect>
@@ -350,7 +337,7 @@
      <property name="geometry">
       <rect>
        <x>110</x>
-       <y>50</y>
+       <y>160</y>
        <width>91</width>
        <height>31</height>
       </rect>
@@ -363,7 +350,7 @@
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>50</y>
+       <y>160</y>
        <width>81</width>
        <height>31</height>
       </rect>
@@ -376,13 +363,51 @@
      <property name="geometry">
       <rect>
        <x>220</x>
-       <y>50</y>
+       <y>160</y>
        <width>151</width>
        <height>31</height>
       </rect>
      </property>
      <property name="text">
       <string>Alarm is currently deactivated</string>
+     </property>
+    </widget>
+    <widget class="QTextEdit" name="wetterText">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>10</y>
+       <width>191</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb();</string>
+     </property>
+    </widget>
+    <widget class="QLabel" name="iconLabel">
+     <property name="geometry">
+      <rect>
+       <x>230</x>
+       <y>10</y>
+       <width>141</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb();</string>
+     </property>
+     <property name="text">
+      <string>iconLabel</string>
+     </property>
+     <property name="scaledContents">
+      <bool>true</bool>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
      </property>
     </widget>
    </widget>

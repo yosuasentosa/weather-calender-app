@@ -228,6 +228,35 @@ debug/moc_mainwindow.cpp: ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qtouchdevice.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qtabwidget.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qicon.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkAccessManager \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qtnetworkglobal.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qtnetwork-config.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkrequest.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QSharedDataPointer \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QString \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QUrl \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QVariant \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QVector \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QObject \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QSslConfiguration \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslconfiguration.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qtcpsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qabstractsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslerror.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslcertificate.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcryptographichash.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qdatetime.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qssl.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QFlags \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QMetaType \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkReply \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkreply.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QIODevice \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkRequest \
 		debug/moc_predefs.h \
 		D:/Qt/5.15.0/mingw81_64/bin/moc.exe
 	D:\Qt\5.15.0\mingw81_64\bin\moc.exe $(DEFINES) --include C:/Users/Klaxonsdept/Documents/GitHub/weather-calender-app/build-Alarm-Desktop_Qt_5_15_0_MinGW_64_bit-Debug/debug/moc_predefs.h -ID:/Qt/5.15.0/mingw81_64/mkspecs/win32-g++ -IC:/Users/Klaxonsdept/Documents/GitHub/weather-calender-app/Software -ID:/Qt/5.15.0/mingw81_64/include -ID:/Qt/5.15.0/mingw81_64/include/QtMultimedia -ID:/Qt/5.15.0/mingw81_64/include/QtWidgets -ID:/Qt/5.15.0/mingw81_64/include/QtGui -ID:/Qt/5.15.0/mingw81_64/include/QtANGLE -ID:/Qt/5.15.0/mingw81_64/include/QtNetwork -ID:/Qt/5.15.0/mingw81_64/include/QtCore -I. -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -ID:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Software\mainwindow.h -o debug\moc_mainwindow.cpp
@@ -361,6 +390,28 @@ debug/moc_snooze.cpp: ../Software/snooze.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qmainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qtabwidget.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qicon.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkAccessManager \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QVector \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QObject \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QSslConfiguration \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslconfiguration.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qtcpsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qabstractsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslerror.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslcertificate.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcryptographichash.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qdatetime.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qssl.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QFlags \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QMetaType \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkReply \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkreply.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QIODevice \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkRequest \
 		debug/moc_predefs.h \
 		D:/Qt/5.15.0/mingw81_64/bin/moc.exe
 	D:\Qt\5.15.0\mingw81_64\bin\moc.exe $(DEFINES) --include C:/Users/Klaxonsdept/Documents/GitHub/weather-calender-app/build-Alarm-Desktop_Qt_5_15_0_MinGW_64_bit-Debug/debug/moc_predefs.h -ID:/Qt/5.15.0/mingw81_64/mkspecs/win32-g++ -IC:/Users/Klaxonsdept/Documents/GitHub/weather-calender-app/Software -ID:/Qt/5.15.0/mingw81_64/include -ID:/Qt/5.15.0/mingw81_64/include/QtMultimedia -ID:/Qt/5.15.0/mingw81_64/include/QtWidgets -ID:/Qt/5.15.0/mingw81_64/include/QtGui -ID:/Qt/5.15.0/mingw81_64/include/QtANGLE -ID:/Qt/5.15.0/mingw81_64/include/QtNetwork -ID:/Qt/5.15.0/mingw81_64/include/QtCore -I. -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++ -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32 -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include -ID:/Qt/Tools/mingw810_64/lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed -ID:/Qt/Tools/mingw810_64/x86_64-w64-mingw32/include ..\Software\snooze.h -o debug\moc_snooze.cpp
@@ -499,6 +550,35 @@ debug/main.o: ../Software/main.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qtouchdevice.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qtabwidget.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qicon.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkAccessManager \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qtnetworkglobal.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qtnetwork-config.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkrequest.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QSharedDataPointer \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QString \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QUrl \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QVariant \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QVector \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QObject \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QSslConfiguration \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslconfiguration.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qtcpsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qabstractsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslerror.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslcertificate.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcryptographichash.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qdatetime.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qssl.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QFlags \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QMetaType \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkReply \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkreply.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QIODevice \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkRequest \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QApplication \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qapplication.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcoreapplication.h \
@@ -615,58 +695,36 @@ debug/mainwindow.o: ../Software/mainwindow.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qtouchdevice.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qtabwidget.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qicon.h \
-		ui_mainwindow.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkAccessManager \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qtnetworkglobal.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qtnetwork-config.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkrequest.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QSharedDataPointer \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QString \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QUrl \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/QVariant \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QApplication \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qapplication.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcoreapplication.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/qeventloop.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qdesktopwidget.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtGui/qguiapplication.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtGui/qinputmethod.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QCalendarWidget \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qcalendarwidget.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QVector \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QObject \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QSslConfiguration \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslconfiguration.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qtcpsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qabstractsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslerror.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslcertificate.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcryptographichash.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qdatetime.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QCheckBox \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qcheckbox.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractbutton.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QFrame \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QGroupBox \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qgroupbox.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLabel \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlabel.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QListWidget \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlistwidget.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlistview.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractitemview.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractscrollarea.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/qabstractitemmodel.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/qitemselectionmodel.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractitemdelegate.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qstyleoption.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractspinbox.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtGui/qvalidator.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/qregularexpression.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qslider.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractslider.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qstyle.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qtabbar.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qrubberband.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QMenuBar \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qmenubar.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qmenu.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qaction.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qactiongroup.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QPushButton \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qpushbutton.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QStatusBar \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qstatusbar.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QTabWidget \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QTimeEdit \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qdatetimeedit.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcalendar.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QWidget \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qssl.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QFlags \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QMetaType \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkReply \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkreply.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QIODevice \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkRequest \
+		ui_mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/QDebug \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/QDateTime \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/QtGui \
@@ -675,6 +733,8 @@ debug/mainwindow.o: ../Software/mainwindow.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/QtCoreDepends \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qabstractanimation.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qabstracteventdispatcher.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qeventloop.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qabstractitemmodel.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qabstractnativeeventfilter.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qabstractproxymodel.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qabstractstate.h \
@@ -687,9 +747,11 @@ debug/mainwindow.o: ../Software/mainwindow.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qbuffer.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qbytearraymatcher.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcache.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcalendar.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcborarray.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcborvalue.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcborcommon.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qregularexpression.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/quuid.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcbormap.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcborstream.h \
@@ -699,8 +761,8 @@ debug/mainwindow.o: ../Software/mainwindow.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcollator.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcommandlineoption.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcommandlineparser.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcoreapplication.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qconcatenatetablesproxymodel.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcryptographichash.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qdeadlinetimer.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qelapsedtimer.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qdir.h \
@@ -712,7 +774,6 @@ debug/mainwindow.o: ../Software/mainwindow.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qexception.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qfactoryinterface.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qfileselector.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/QObject \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/QStringList \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qfilesystemwatcher.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qfinalstate.h \
@@ -725,6 +786,7 @@ debug/mainwindow.o: ../Software/mainwindow.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qhistorystate.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qidentityproxymodel.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qisenum.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qitemselectionmodel.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qjsonarray.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qjsonvalue.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qjsondocument.h \
@@ -821,6 +883,8 @@ debug/mainwindow.o: ../Software/mainwindow.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qgenericmatrix.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qgenericplugin.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qgenericpluginfactory.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtGui/qguiapplication.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtGui/qinputmethod.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qiconengine.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qiconengineplugin.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qimageiohandler.h \
@@ -852,7 +916,6 @@ debug/mainwindow.o: ../Software/mainwindow.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qopenglframebufferobject.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qopenglpaintdevice.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qopenglpixeltransferoptions.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/QSharedDataPointer \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qopenglshaderprogram.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qopengltexture.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qopengltextureblitter.h \
@@ -893,8 +956,8 @@ debug/mainwindow.o: ../Software/mainwindow.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qtextdocumentwriter.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qtextlist.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qtexttable.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtGui/qvalidator.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qtguiversion.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/QString \
 		../Software/snooze.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QDialog \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qdialog.h \
@@ -906,15 +969,13 @@ debug/mainwindow.o: ../Software/mainwindow.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtMultimedia/qmultimedia.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtMultimedia/qmediacontent.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtMultimedia/qmediaresource.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkrequest.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qtnetworkglobal.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qtnetwork-config.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/QUrl \
 		D:/Qt/5.15.0/mingw81_64/include/QtMultimedia/qmediaenumdebug.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtMultimedia/qaudio.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkconfiguration.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QMessageBox \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qmessagebox.h
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qmessagebox.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QJsonDocument \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QJsonObject
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o debug\mainwindow.o ..\Software\mainwindow.cpp
 
 debug/snooze.o: ../Software/snooze.cpp ../Software/snooze.h \
@@ -1046,28 +1107,37 @@ debug/snooze.o: ../Software/snooze.cpp ../Software/snooze.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qmainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qtabwidget.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qicon.h \
-		ui_snooze.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QApplication \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qapplication.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcoreapplication.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/qeventloop.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qdesktopwidget.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtGui/qguiapplication.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtGui/qinputmethod.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLabel \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlabel.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QPushButton \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qpushbutton.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractbutton.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/QDateTime \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkAccessManager \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkaccessmanager.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QVector \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QObject \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QSslConfiguration \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslconfiguration.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qtcpsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qabstractsocket.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslerror.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslcertificate.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcryptographichash.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qdatetime.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qssl.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QFlags \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QSslPreSharedKeyAuthenticator \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qsslpresharedkeyauthenticator.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QMetaType \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkReply \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/qnetworkreply.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QIODevice \
+		D:/Qt/5.15.0/mingw81_64/include/QtNetwork/QNetworkRequest \
+		ui_snooze.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/QDateTime \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/QtGui \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/QtGuiDepends \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/QtCore \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/QtCoreDepends \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qabstractanimation.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qabstracteventdispatcher.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qeventloop.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qabstractitemmodel.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qabstractnativeeventfilter.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qabstractproxymodel.h \
@@ -1095,8 +1165,8 @@ debug/snooze.o: ../Software/snooze.cpp ../Software/snooze.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcollator.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcommandlineoption.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcommandlineparser.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcoreapplication.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qconcatenatetablesproxymodel.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/qcryptographichash.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qdeadlinetimer.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qelapsedtimer.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qdir.h \
@@ -1108,7 +1178,6 @@ debug/snooze.o: ../Software/snooze.cpp ../Software/snooze.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qexception.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qfactoryinterface.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qfileselector.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtCore/QObject \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/QStringList \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qfilesystemwatcher.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtCore/qfinalstate.h \
@@ -1217,6 +1286,8 @@ debug/snooze.o: ../Software/snooze.cpp ../Software/snooze.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qgenericmatrix.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qgenericplugin.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qgenericpluginfactory.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtGui/qguiapplication.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtGui/qinputmethod.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qiconengine.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qiconengineplugin.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtGui/qimageiohandler.h \

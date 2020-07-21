@@ -22,6 +22,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
+#include <QtWidgets/QTextEdit>
 #include <QtWidgets/QTimeEdit>
 #include <QtWidgets/QWidget>
 
@@ -34,9 +35,8 @@ public:
     QTabWidget *tabWidget;
     QWidget *tab;
     QLabel *label_2;
-    QLabel *label_4;
-    QLabel *label_5;
-    QLabel *label_6;
+    QLabel *ortLabel;
+    QLabel *tempLabel;
     QWidget *tab_2;
     QLabel *label;
     QPushButton *pushButton;
@@ -60,6 +60,8 @@ public:
     QPushButton *pushButton_4;
     QPushButton *pushButton_5;
     QLabel *label_3;
+    QTextEdit *wetterText;
+    QLabel *iconLabel;
     QCalendarWidget *calendarWidget;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -84,15 +86,12 @@ public:
         font.setBold(true);
         font.setWeight(75);
         label_2->setFont(font);
-        label_4 = new QLabel(tab);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(10, 90, 47, 13));
-        label_5 = new QLabel(tab);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(10, 110, 47, 13));
-        label_6 = new QLabel(tab);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setGeometry(QRect(10, 130, 47, 13));
+        ortLabel = new QLabel(tab);
+        ortLabel->setObjectName(QString::fromUtf8("ortLabel"));
+        ortLabel->setGeometry(QRect(10, 110, 47, 13));
+        tempLabel = new QLabel(tab);
+        tempLabel->setObjectName(QString::fromUtf8("tempLabel"));
+        tempLabel->setGeometry(QRect(10, 130, 47, 13));
         tabWidget->addTab(tab, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
@@ -114,7 +113,7 @@ public:
         frame->setFrameShadow(QFrame::Raised);
         groupBox = new QGroupBox(frame);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(10, 90, 381, 91));
+        groupBox->setGeometry(QRect(10, 200, 381, 91));
         chkMon = new QCheckBox(groupBox);
         chkMon->setObjectName(QString::fromUtf8("chkMon"));
         chkMon->setGeometry(QRect(20, 20, 86, 23));
@@ -138,34 +137,45 @@ public:
         chkSun->setGeometry(QRect(250, 50, 86, 23));
         listWidget = new QListWidget(frame);
         listWidget->setObjectName(QString::fromUtf8("listWidget"));
-        listWidget->setGeometry(QRect(10, 200, 261, 221));
+        listWidget->setGeometry(QRect(10, 300, 261, 221));
         removebutton = new QPushButton(frame);
         removebutton->setObjectName(QString::fromUtf8("removebutton"));
-        removebutton->setGeometry(QRect(280, 240, 111, 31));
+        removebutton->setGeometry(QRect(280, 340, 111, 31));
         addButton = new QPushButton(frame);
         addButton->setObjectName(QString::fromUtf8("addButton"));
-        addButton->setGeometry(QRect(280, 200, 111, 31));
+        addButton->setGeometry(QRect(280, 300, 111, 31));
         labeldatetime = new QLabel(frame);
         labeldatetime->setObjectName(QString::fromUtf8("labeldatetime"));
-        labeldatetime->setGeometry(QRect(20, 20, 91, 16));
+        labeldatetime->setGeometry(QRect(20, 130, 91, 16));
         pushButton_3 = new QPushButton(frame);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(280, 280, 111, 31));
+        pushButton_3->setGeometry(QRect(280, 380, 111, 31));
         timeEdit = new QTimeEdit(frame);
         timeEdit->setObjectName(QString::fromUtf8("timeEdit"));
-        timeEdit->setGeometry(QRect(110, 10, 121, 31));
+        timeEdit->setGeometry(QRect(110, 120, 121, 31));
         testAlarmBtn = new QPushButton(frame);
         testAlarmBtn->setObjectName(QString::fromUtf8("testAlarmBtn"));
-        testAlarmBtn->setGeometry(QRect(280, 320, 111, 31));
+        testAlarmBtn->setGeometry(QRect(280, 420, 111, 31));
         pushButton_4 = new QPushButton(frame);
         pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setGeometry(QRect(110, 50, 91, 31));
+        pushButton_4->setGeometry(QRect(110, 160, 91, 31));
         pushButton_5 = new QPushButton(frame);
         pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setGeometry(QRect(20, 50, 81, 31));
+        pushButton_5->setGeometry(QRect(20, 160, 81, 31));
         label_3 = new QLabel(frame);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(220, 50, 151, 31));
+        label_3->setGeometry(QRect(220, 160, 151, 31));
+        wetterText = new QTextEdit(frame);
+        wetterText->setObjectName(QString::fromUtf8("wetterText"));
+        wetterText->setGeometry(QRect(10, 10, 191, 101));
+        wetterText->setAutoFillBackground(false);
+        wetterText->setStyleSheet(QString::fromUtf8("background-color: rgb();"));
+        iconLabel = new QLabel(frame);
+        iconLabel->setObjectName(QString::fromUtf8("iconLabel"));
+        iconLabel->setGeometry(QRect(230, 10, 141, 101));
+        iconLabel->setStyleSheet(QString::fromUtf8("background-color: rgb();"));
+        iconLabel->setScaledContents(true);
+        iconLabel->setAlignment(Qt::AlignCenter);
         calendarWidget = new QCalendarWidget(centralwidget);
         calendarWidget->setObjectName(QString::fromUtf8("calendarWidget"));
         calendarWidget->setGeometry(QRect(20, 230, 361, 311));
@@ -190,9 +200,8 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "00:00:00", nullptr));
-        label_4->setText(QCoreApplication::translate("MainWindow", "Wetter", nullptr));
-        label_5->setText(QCoreApplication::translate("MainWindow", "Standort", nullptr));
-        label_6->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        ortLabel->setText(QCoreApplication::translate("MainWindow", "Standort", nullptr));
+        tempLabel->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "Tab 1", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "00:00:00", nullptr));
         pushButton->setText(QCoreApplication::translate("MainWindow", "Start", nullptr));
@@ -214,6 +223,7 @@ public:
         pushButton_4->setText(QCoreApplication::translate("MainWindow", "TurnOff Snooze", nullptr));
         pushButton_5->setText(QCoreApplication::translate("MainWindow", "testAlarm", nullptr));
         label_3->setText(QCoreApplication::translate("MainWindow", "Alarm is currently deactivated", nullptr));
+        iconLabel->setText(QCoreApplication::translate("MainWindow", "iconLabel", nullptr));
     } // retranslateUi
 
 };

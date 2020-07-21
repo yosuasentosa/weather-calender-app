@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -32,12 +34,17 @@ private slots:
     void on_pushButton_4_clicked();
 
     void on_pushButton_5_clicked();
-
+//Weather and IP slots
+    void reqIP();
+    void downloadIpFinished(QNetworkReply*);
+    void downloadWetter(QNetworkReply*);
+    void downloadIcon(QNetworkReply*);
 
 private:
     Ui::MainWindow *ui;
     QTimer *timerObj;
     QTimer *timertest;
     QTimer *timerAlarm;
+    QString ipUrl ="http://ip-api.com/json/?fields=query,country,city";
 };
 #endif // MAINWINDOW_H
