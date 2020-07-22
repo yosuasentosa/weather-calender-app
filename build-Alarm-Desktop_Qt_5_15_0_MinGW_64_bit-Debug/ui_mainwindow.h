@@ -94,9 +94,9 @@ public:
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
         label = new QLabel(tab_2);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(10, 10, 291, 91));
+        label->setGeometry(QRect(10, 10, 341, 91));
         QFont font1;
-        font1.setPointSize(36);
+        font1.setPointSize(28);
         font1.setBold(true);
         font1.setWeight(75);
         label->setFont(font1);
@@ -125,6 +125,12 @@ public:
         labeldatetime = new QLabel(frame);
         labeldatetime->setObjectName(QString::fromUtf8("labeldatetime"));
         labeldatetime->setGeometry(QRect(20, 130, 91, 16));
+        QSizePolicy sizePolicy2(QSizePolicy::Ignored, QSizePolicy::Ignored);
+        sizePolicy2.setHorizontalStretch(0);
+        sizePolicy2.setVerticalStretch(0);
+        sizePolicy2.setHeightForWidth(labeldatetime->sizePolicy().hasHeightForWidth());
+        labeldatetime->setSizePolicy(sizePolicy2);
+        labeldatetime->setScaledContents(true);
         pushButton_3 = new QPushButton(frame);
         pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
         pushButton_3->setGeometry(QRect(150, 230, 111, 31));
@@ -146,11 +152,11 @@ public:
         wetterText = new QTextEdit(frame);
         wetterText->setObjectName(QString::fromUtf8("wetterText"));
         wetterText->setGeometry(QRect(10, 20, 191, 91));
-        QSizePolicy sizePolicy2(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy2.setHorizontalStretch(0);
-        sizePolicy2.setVerticalStretch(0);
-        sizePolicy2.setHeightForWidth(wetterText->sizePolicy().hasHeightForWidth());
-        wetterText->setSizePolicy(sizePolicy2);
+        QSizePolicy sizePolicy3(QSizePolicy::Fixed, QSizePolicy::Fixed);
+        sizePolicy3.setHorizontalStretch(0);
+        sizePolicy3.setVerticalStretch(0);
+        sizePolicy3.setHeightForWidth(wetterText->sizePolicy().hasHeightForWidth());
+        wetterText->setSizePolicy(sizePolicy3);
         wetterText->setAutoFillBackground(true);
         wetterText->setStyleSheet(QString::fromUtf8("background-color: rgb();"));
         wetterText->setFrameShape(QFrame::NoFrame);
@@ -174,7 +180,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(1);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
