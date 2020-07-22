@@ -124,7 +124,7 @@ public:
         addButton->setGeometry(QRect(250, 120, 111, 31));
         labeldatetime = new QLabel(frame);
         labeldatetime->setObjectName(QString::fromUtf8("labeldatetime"));
-        labeldatetime->setGeometry(QRect(20, 130, 91, 16));
+        labeldatetime->setGeometry(QRect(20, 130, 81, 16));
         QSizePolicy sizePolicy2(QSizePolicy::Ignored, QSizePolicy::Ignored);
         sizePolicy2.setHorizontalStretch(0);
         sizePolicy2.setVerticalStretch(0);
@@ -180,7 +180,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(0);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
