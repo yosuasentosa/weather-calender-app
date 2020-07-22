@@ -47,4 +47,5 @@ private:
     QTimer *timerAlarm;
     QString ipUrl ="http://ip-api.com/json/?fields=query,country,city";
 };
+//Test "Hallo"
 #endif // MAINWINDOW_H
