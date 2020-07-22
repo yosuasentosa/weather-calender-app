@@ -19,7 +19,7 @@ Snooze::Snooze(QWidget *parent) :
     //connect(timerdismiss,SIGNAL(timeout()), this, SLOT(on_dismissbtn_clicked()));
     //timerdismiss->start(2000);
     music = new QMediaPlayer();
-    music->setMedia(QUrl("alarmtone.mp3"));
+    music->setMedia(QUrl("qrc:/sound/alarmtone.mp3"));
     music->play();
     //qrc:/sound/E:/vertiefungsproj/
 }

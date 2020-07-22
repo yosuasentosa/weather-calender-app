@@ -1,3 +1,5 @@
 <RCC>
-    <qresource prefix="/sound"/>
+    <qresource prefix="/sound">
+        <file>alarmtone.mp3</file>
+    </qresource>
 </RCC>
