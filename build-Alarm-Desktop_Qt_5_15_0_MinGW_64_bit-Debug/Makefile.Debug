@@ -356,9 +356,11 @@ debug/moc_mainwindow.cpp: ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayout.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayoutitem.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLCDNumber \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlcdnumber.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLabel \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlabel.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QListWidget \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlistwidget.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlistview.h \
@@ -384,6 +386,8 @@ debug/moc_mainwindow.cpp: ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QPushButton \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QSpinBox \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qspinbox.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QStatusBar \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qstatusbar.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QTabWidget \
@@ -575,9 +579,11 @@ debug/moc_snooze.cpp: ../Software/snooze.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayout.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayoutitem.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLCDNumber \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlcdnumber.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLabel \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlabel.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QListWidget \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlistwidget.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlistview.h \
@@ -603,6 +609,8 @@ debug/moc_snooze.cpp: ../Software/snooze.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QPushButton \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QSpinBox \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qspinbox.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QStatusBar \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qstatusbar.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QTabWidget \
@@ -806,9 +814,11 @@ debug/main.o: ../Software/main.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayout.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayoutitem.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLCDNumber \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlcdnumber.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLabel \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlabel.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QListWidget \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlistwidget.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlistview.h \
@@ -834,6 +844,8 @@ debug/main.o: ../Software/main.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QPushButton \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QSpinBox \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qspinbox.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QStatusBar \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qstatusbar.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QTabWidget \
@@ -1008,9 +1020,11 @@ debug/mainwindow.o: ../Software/mainwindow.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayout.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayoutitem.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLCDNumber \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlcdnumber.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLabel \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlabel.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QListWidget \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlistwidget.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlistview.h \
@@ -1036,6 +1050,8 @@ debug/mainwindow.o: ../Software/mainwindow.cpp ../Software/mainwindow.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QPushButton \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QSpinBox \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qspinbox.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QStatusBar \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qstatusbar.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QTabWidget \
@@ -1458,9 +1474,11 @@ debug/snooze.o: ../Software/snooze.cpp ../Software/snooze.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayout.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlayoutitem.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qboxlayout.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLCDNumber \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlcdnumber.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QLabel \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlabel.h \
-		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qframe.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QListWidget \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlistwidget.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qlistview.h \
@@ -1486,6 +1504,8 @@ debug/snooze.o: ../Software/snooze.cpp ../Software/snooze.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QPushButton \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qpushbutton.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qabstractbutton.h \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QSpinBox \
+		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qspinbox.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QStatusBar \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/qstatusbar.h \
 		D:/Qt/5.15.0/mingw81_64/include/QtWidgets/QTabWidget \

@@ -19,6 +19,7 @@
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QSpinBox>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QTabWidget>
@@ -37,9 +38,9 @@ public:
     QTabWidget *tabWidget;
     QWidget *Wetter;
     QGridLayout *gridLayout_2;
-    QTextEdit *wetterText;
     QLabel *label_2;
     QLabel *iconLabel;
+    QTextEdit *wetterText;
     QWidget *tab_2;
     QGridLayout *gridLayout;
     QPushButton *testAlarmBtn;
@@ -92,6 +93,15 @@ public:
     QLCDNumber *lcdNumber_34;
     QLCDNumber *lcdNumber_36;
     QLCDNumber *lcdNumber_35;
+    QWidget *tab_5;
+    QGridLayout *gridLayout_6;
+    QPushButton *berlin;
+    QPushButton *moskau;
+    QPushButton *jakarta;
+    QSpacerItem *verticalSpacer;
+    QPushButton *losangeles;
+    QTextEdit *worldWeather;
+    QLabel *worldWeatherIcon;
     QCalendarWidget *calendarWidget;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -101,13 +111,13 @@ public:
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
         MainWindow->setEnabled(true);
-        MainWindow->resize(382, 600);
+        MainWindow->resize(399, 607);
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
         sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
         MainWindow->setSizePolicy(sizePolicy);
-        MainWindow->setMinimumSize(QSize(382, 600));
+        MainWindow->setMinimumSize(QSize(399, 607));
         MainWindow->setMaximumSize(QSize(16777215, 16777215));
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
@@ -126,22 +136,6 @@ public:
         Wetter->setObjectName(QString::fromUtf8("Wetter"));
         gridLayout_2 = new QGridLayout(Wetter);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
-        wetterText = new QTextEdit(Wetter);
-        wetterText->setObjectName(QString::fromUtf8("wetterText"));
-        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Ignored);
-        sizePolicy1.setHorizontalStretch(0);
-        sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(wetterText->sizePolicy().hasHeightForWidth());
-        wetterText->setSizePolicy(sizePolicy1);
-        wetterText->setMinimumSize(QSize(256, 102));
-        wetterText->setContextMenuPolicy(Qt::CustomContextMenu);
-        wetterText->setAutoFillBackground(true);
-        wetterText->setStyleSheet(QString::fromUtf8("background-color: rgb();"));
-        wetterText->setFrameShape(QFrame::NoFrame);
-        wetterText->setReadOnly(true);
-
-        gridLayout_2->addWidget(wetterText, 1, 0, 1, 1);
-
         label_2 = new QLabel(Wetter);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         sizePolicy.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
@@ -159,6 +153,9 @@ public:
 
         iconLabel = new QLabel(Wetter);
         iconLabel->setObjectName(QString::fromUtf8("iconLabel"));
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Ignored);
+        sizePolicy1.setHorizontalStretch(0);
+        sizePolicy1.setVerticalStretch(0);
         sizePolicy1.setHeightForWidth(iconLabel->sizePolicy().hasHeightForWidth());
         iconLabel->setSizePolicy(sizePolicy1);
         iconLabel->setStyleSheet(QString::fromUtf8("background-color: rgb();"));
@@ -166,6 +163,19 @@ public:
         iconLabel->setAlignment(Qt::AlignCenter);
 
         gridLayout_2->addWidget(iconLabel, 1, 1, 1, 1);
+
+        wetterText = new QTextEdit(Wetter);
+        wetterText->setObjectName(QString::fromUtf8("wetterText"));
+        sizePolicy1.setHeightForWidth(wetterText->sizePolicy().hasHeightForWidth());
+        wetterText->setSizePolicy(sizePolicy1);
+        wetterText->setMinimumSize(QSize(256, 102));
+        wetterText->setContextMenuPolicy(Qt::CustomContextMenu);
+        wetterText->setAutoFillBackground(true);
+        wetterText->setStyleSheet(QString::fromUtf8("background-color: rgb();"));
+        wetterText->setFrameShape(QFrame::NoFrame);
+        wetterText->setReadOnly(true);
+
+        gridLayout_2->addWidget(wetterText, 1, 0, 1, 1);
 
         tabWidget->addTab(Wetter, QString());
         tab_2 = new QWidget();
@@ -382,8 +392,7 @@ public:
         lcdNumber_32 = new QLCDNumber(tab_4);
         lcdNumber_32->setObjectName(QString::fromUtf8("lcdNumber_32"));
         lcdNumber_32->setAutoFillBackground(false);
-        lcdNumber_32->setStyleSheet(QString::fromUtf8("font: 8pt \"MS Shell Dlg 2\";\n"
-"font-color: rgb(0, 0, 0);"));
+        lcdNumber_32->setStyleSheet(QString::fromUtf8(""));
 
         gridLayout_5->addWidget(lcdNumber_32, 1, 3, 1, 1);
 
@@ -437,6 +446,49 @@ public:
         gridLayout_5->addWidget(lcdNumber_35, 3, 2, 1, 1);
 
         tabWidget->addTab(tab_4, QString());
+        tab_5 = new QWidget();
+        tab_5->setObjectName(QString::fromUtf8("tab_5"));
+        gridLayout_6 = new QGridLayout(tab_5);
+        gridLayout_6->setObjectName(QString::fromUtf8("gridLayout_6"));
+        berlin = new QPushButton(tab_5);
+        berlin->setObjectName(QString::fromUtf8("berlin"));
+
+        gridLayout_6->addWidget(berlin, 0, 2, 1, 1);
+
+        moskau = new QPushButton(tab_5);
+        moskau->setObjectName(QString::fromUtf8("moskau"));
+
+        gridLayout_6->addWidget(moskau, 2, 2, 1, 1);
+
+        jakarta = new QPushButton(tab_5);
+        jakarta->setObjectName(QString::fromUtf8("jakarta"));
+
+        gridLayout_6->addWidget(jakarta, 3, 2, 1, 1);
+
+        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Preferred);
+
+        gridLayout_6->addItem(verticalSpacer, 4, 2, 1, 1);
+
+        losangeles = new QPushButton(tab_5);
+        losangeles->setObjectName(QString::fromUtf8("losangeles"));
+
+        gridLayout_6->addWidget(losangeles, 1, 2, 1, 1);
+
+        worldWeather = new QTextEdit(tab_5);
+        worldWeather->setObjectName(QString::fromUtf8("worldWeather"));
+        sizePolicy2.setHeightForWidth(worldWeather->sizePolicy().hasHeightForWidth());
+        worldWeather->setSizePolicy(sizePolicy2);
+        worldWeather->setMinimumSize(QSize(116, 106));
+
+        gridLayout_6->addWidget(worldWeather, 0, 0, 4, 1);
+
+        worldWeatherIcon = new QLabel(tab_5);
+        worldWeatherIcon->setObjectName(QString::fromUtf8("worldWeatherIcon"));
+        worldWeatherIcon->setMinimumSize(QSize(115, 106));
+
+        gridLayout_6->addWidget(worldWeatherIcon, 0, 1, 4, 1);
+
+        tabWidget->addTab(tab_5, QString());
 
         verticalLayout->addWidget(tabWidget);
 
@@ -450,7 +502,7 @@ public:
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 382, 21));
+        menubar->setGeometry(QRect(0, 0, 399, 21));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -458,7 +510,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(0);
+        tabWidget->setCurrentIndex(5);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -498,6 +550,12 @@ public:
         label_54->setText(QCoreApplication::translate("MainWindow", "Los Angeles", nullptr));
         label_56->setText(QCoreApplication::translate("MainWindow", "Moskau", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(tab_4), QCoreApplication::translate("MainWindow", "Weltuhr", nullptr));
+        berlin->setText(QCoreApplication::translate("MainWindow", "Berlin", nullptr));
+        moskau->setText(QCoreApplication::translate("MainWindow", "Moskau", nullptr));
+        jakarta->setText(QCoreApplication::translate("MainWindow", "Jakarta", nullptr));
+        losangeles->setText(QCoreApplication::translate("MainWindow", "Los Angeles", nullptr));
+        worldWeatherIcon->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_5), QCoreApplication::translate("MainWindow", "Wetter der Welt", nullptr));
     } // retranslateUi
 
 };

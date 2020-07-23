@@ -48,9 +48,15 @@ private slots:
     void on_pushButton_5_clicked();
 //Weather and IP slots
     void reqIP();
+    void reqWeather();
+    void reqWeltWeather();
+    void reqIcon();
+    void reqWeltIcon();
     void downloadIpFinished(QNetworkReply*);
     void downloadWetter(QNetworkReply*);
+    void downloadWeltWetter(QNetworkReply*);
     void downloadIcon(QNetworkReply*);
+    void downloadWeltIcon(QNetworkReply*);
     //Alex
     void on_pushButtonalex_clicked();
     void on_startButton_clicked();
@@ -67,6 +73,16 @@ private slots:
     void on_stopButton_3_clicked();
 
     void on_pushButtonalex_5_clicked();
+    void onTabChanged(int);
+
+
+    void on_jakarta_clicked();
+
+    void on_berlin_clicked();
+
+    void on_losangeles_clicked();
+
+    void on_moskau_clicked();
 
 private:
     Ui::MainWindow *ui;
