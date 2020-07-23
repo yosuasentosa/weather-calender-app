@@ -261,6 +261,8 @@ void MainWindow::on_pushButton_5_clicked()
     timerAlarm->start(1000);
     ui->label_3->setText("Alarm ist aktiviert");
 }
+
+//request ip and location to http://ip-api.com
 void MainWindow::reqIP(){
     QNetworkAccessManager *man = new QNetworkAccessManager(this);
     connect(man, &QNetworkAccessManager::finished,this, &MainWindow::downloadIpFinished);
@@ -269,16 +271,20 @@ void MainWindow::reqIP(){
     man->get(request);
 }
 
+//download and read the API respond
 void MainWindow::downloadIpFinished(QNetworkReply* reply){
     QString replyText = reply->readAll();
     QJsonDocument repDoc = QJsonDocument::fromJson(replyText.toUtf8());
     QJsonObject repObj = repDoc.object();
     ipCity = repObj.value(QString("city")).toString();
     ui->wetterText->setText(ipCity);
-    weatherURl = "http://api.openweathermap.org/data/2.5/weather?q="+ipCity+"&appid=beca7600f8bdadacae139b13ade2dbf7&units=metric";
 
+    //add city to the weather API request
+    weatherURl = "http://api.openweathermap.org/data/2.5/weather?q="+ipCity+"&appid=beca7600f8bdadacae139b13ade2dbf7&units=metric";
     reqWeather();
 }
+
+//request the weather in location to api.openweathermap.org
 void MainWindow::reqWeather(){
     QNetworkAccessManager *man = new QNetworkAccessManager(this);
     connect(man, &QNetworkAccessManager::finished,this, &MainWindow::downloadWetter);
@@ -287,6 +293,7 @@ void MainWindow::reqWeather(){
     man->get(request);
 }
 
+//download and read the weather API respond
 void MainWindow::downloadWetter(QNetworkReply *reply){
     QString replyText = reply->readAll();
     QJsonDocument repDoc = QJsonDocument::fromJson(replyText.toUtf8());
@@ -308,14 +315,16 @@ void MainWindow::downloadWetter(QNetworkReply *reply){
     reqIcon();
 }
 
+//request the weather icon
 void MainWindow::reqIcon(){
     QNetworkAccessManager *man = new QNetworkAccessManager(this);
     connect(man, &QNetworkAccessManager::finished, this, &MainWindow::downloadIcon);
-    const QUrl url = QUrl("http://openweathermap.org/img/wn/" + iconID + "@2x.png");
+    const QUrl url = QUrl("http://openweathermap.org/img/wn/" + iconID + "@2x.png"); //add weather condition code for icon
     QNetworkRequest request(url);
     man->get(request);
 }
 
+//download and read the icon from  respond http://openweathermap.org
 void MainWindow::downloadIcon(QNetworkReply *reply){
     QPixmap icon;
     icon.loadFromData(reply->readAll());
@@ -337,9 +346,11 @@ void MainWindow::on_pushButtonalex_5_clicked()
 {
     ui->lcdmin->display(0);
     ui->lcdsecc->display(0);
-myTimer->stop();
+    myTimer->stop();
 
 }
+
+//Request API for world/other cities weather
 void MainWindow::reqWeltWeather(){
     QNetworkAccessManager *man = new QNetworkAccessManager(this);
     connect(man, &QNetworkAccessManager::finished,this, &MainWindow::downloadWeltWetter);
@@ -347,6 +358,9 @@ void MainWindow::reqWeltWeather(){
     QNetworkRequest request(url);
     man->get(request);
 }
+
+
+//Read the API respond for world/other cities weather
 void MainWindow::downloadWeltWetter(QNetworkReply *reply){
     QString replyText = reply->readAll();
     QJsonDocument repDoc = QJsonDocument::fromJson(replyText.toUtf8());
@@ -363,10 +377,12 @@ void MainWindow::downloadWeltWetter(QNetworkReply *reply){
     QString tempStr ="\nTemp: "+ QString("%1").arg(tempFeelVal.toDouble())  + "°C";
     QString feelTempStr ="\nFeels like: "+ QString("%1").arg(tempVal.toDouble())  + "°C";
     WorldrepOut = ipCity + "\n" + weatherOut + tempStr+feelTempStr ;
+    ui->worldWeather->setText(WorldrepOut);
 
     reqWeltIcon();
 }
 
+//request the weather icon
 void MainWindow::reqWeltIcon(){
     QNetworkAccessManager *man = new QNetworkAccessManager(this);
     connect(man, &QNetworkAccessManager::finished, this, &MainWindow::downloadWeltIcon);
@@ -375,6 +391,7 @@ void MainWindow::reqWeltIcon(){
     man->get(request);
 }
 
+//download and read the icon from  respond http://openweathermap.org
 void MainWindow::downloadWeltIcon(QNetworkReply *reply){
     QPixmap icon;
     icon.loadFromData(reply->readAll());
@@ -392,8 +409,6 @@ void MainWindow::on_jakarta_clicked()
     const QUrl url =QUrl(weatherURl);
     QNetworkRequest request(url);
     man->get(request);
-
-    ui->worldWeather->setText(WorldrepOut);
 }
 
 void MainWindow::on_berlin_clicked()
@@ -405,8 +420,6 @@ void MainWindow::on_berlin_clicked()
     const QUrl url =QUrl(weatherURl);
     QNetworkRequest request(url);
     man->get(request);
-
-    ui->worldWeather->setText(WorldrepOut);
 }
 
 void MainWindow::on_losangeles_clicked()
@@ -418,8 +431,6 @@ void MainWindow::on_losangeles_clicked()
     const QUrl url =QUrl(weatherURl);
     QNetworkRequest request(url);
     man->get(request);
-
-    ui->worldWeather->setText(WorldrepOut);
 }
 
 void MainWindow::on_moskau_clicked()
@@ -431,6 +442,4 @@ void MainWindow::on_moskau_clicked()
     const QUrl url =QUrl(weatherURl);
     QNetworkRequest request(url);
     man->get(request);
-
-    ui->worldWeather->setText(WorldrepOut);
 }
