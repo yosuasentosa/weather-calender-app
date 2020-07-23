@@ -50,14 +50,8 @@
         <height>196</height>
        </size>
       </property>
-      <property name="font">
-       <font>
-        <weight>50</weight>
-        <bold>false</bold>
-       </font>
-      </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="Wetter">
        <attribute name="title">
@@ -231,6 +225,32 @@
         <string>Timer</string>
        </attribute>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hours:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+>>>>>>> parent of aee8c91... ui
        <widget class="QLabel" name="label_10">
         <property name="geometry">
          <rect>
@@ -280,6 +300,19 @@
          </rect>
         </property>
        </widget>
+<<<<<<< HEAD
+=======
+       <widget class="QLCDNumber" name="lcdhours">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>30</y>
+          <width>64</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+>>>>>>> parent of aee8c91... ui
        <widget class="QLabel" name="label_11">
         <property name="geometry">
          <rect>
@@ -303,6 +336,22 @@
          </rect>
         </property>
        </widget>
+<<<<<<< HEAD
+=======
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>10</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hours:</string>
+        </property>
+       </widget>
+>>>>>>> parent of aee8c91... ui
        <widget class="QLCDNumber" name="lcdmin">
         <property name="geometry">
          <rect>
@@ -352,6 +401,7 @@
          <string>stop</string>
         </property>
        </widget>
+<<<<<<< HEAD
 =======
        <layout class="QGridLayout" name="gridLayout_3">
         <item row="0" column="2">
@@ -434,12 +484,17 @@
         </item>
        </layout>
 >>>>>>> aee8c91bae9e241946f3c59dc5f6dc3a823f6095
+=======
+>>>>>>> parent of aee8c91... ui
       </widget>
       <widget class="QWidget" name="tab_3">
        <attribute name="title">
         <string>Stoppuhr</string>
        </attribute>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of aee8c91... ui
        <widget class="QLabel" name="minutesLabel_3">
         <property name="geometry">
          <rect>
@@ -463,7 +518,11 @@
          </rect>
         </property>
         <property name="text">
+<<<<<<< HEAD
          <string>start</string>
+=======
+         <string>start/pause</string>
+>>>>>>> parent of aee8c91... ui
         </property>
        </widget>
        <widget class="QLCDNumber" name="minuteScreen_3">
@@ -535,6 +594,7 @@
          </rect>
         </property>
        </widget>
+<<<<<<< HEAD
 =======
        <layout class="QGridLayout" name="gridLayout_4">
         <item row="0" column="0">
@@ -583,191 +643,142 @@
         </item>
        </layout>
 >>>>>>> aee8c91bae9e241946f3c59dc5f6dc3a823f6095
+=======
+>>>>>>> parent of aee8c91... ui
       </widget>
       <widget class="QWidget" name="tab_4">
        <attribute name="title">
         <string>Weltuhr</string>
        </attribute>
-       <layout class="QGridLayout" name="gridLayout_5">
-        <item row="0" column="0" colspan="2">
-         <widget class="QLabel" name="label_55">
-          <property name="text">
-           <string>Berlin</string>
-          </property>
-         </widget>
-        </item>
-        <item row="0" column="3" colspan="2">
-         <widget class="QLabel" name="label_54">
-          <property name="text">
-           <string>Los Angeles</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="0">
-         <widget class="QLCDNumber" name="lcdNumber_28"/>
-        </item>
-        <item row="1" column="1">
-         <widget class="QLCDNumber" name="lcdNumber_31"/>
-        </item>
-        <item row="1" column="2">
-         <widget class="QLCDNumber" name="lcdNumber_30"/>
-        </item>
-        <item row="1" column="3">
-         <widget class="QLCDNumber" name="lcdNumber_32">
-          <property name="autoFillBackground">
-           <bool>false</bool>
-          </property>
-          <property name="styleSheet">
-           <string notr="true">font: 8pt &quot;MS Shell Dlg 2&quot;;
-font-color: rgb(0, 0, 0);</string>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="4">
-         <widget class="QLCDNumber" name="lcdNumber_29">
-          <property name="palette">
-           <palette>
-            <active>
-             <colorrole role="Button">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-               </color>
-              </brush>
-             </colorrole>
-             <colorrole role="Midlight">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-               </color>
-              </brush>
-             </colorrole>
-             <colorrole role="Base">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>255</red>
-                <green>255</green>
-                <blue>255</blue>
-               </color>
-              </brush>
-             </colorrole>
-             <colorrole role="Window">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-               </color>
-              </brush>
-             </colorrole>
-            </active>
-            <inactive>
-             <colorrole role="Button">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-               </color>
-              </brush>
-             </colorrole>
-             <colorrole role="Midlight">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-               </color>
-              </brush>
-             </colorrole>
-             <colorrole role="Base">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>255</red>
-                <green>255</green>
-                <blue>255</blue>
-               </color>
-              </brush>
-             </colorrole>
-             <colorrole role="Window">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-               </color>
-              </brush>
-             </colorrole>
-            </inactive>
-            <disabled>
-             <colorrole role="Button">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-               </color>
-              </brush>
-             </colorrole>
-             <colorrole role="Midlight">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-               </color>
-              </brush>
-             </colorrole>
-             <colorrole role="Base">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-               </color>
-              </brush>
-             </colorrole>
-             <colorrole role="Window">
-              <brush brushstyle="SolidPattern">
-               <color alpha="255">
-                <red>0</red>
-                <green>0</green>
-                <blue>0</blue>
-               </color>
-              </brush>
-             </colorrole>
-            </disabled>
-           </palette>
-          </property>
-          <property name="smallDecimalPoint">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
-        <item row="1" column="5">
-         <widget class="QLCDNumber" name="lcdNumber_33"/>
-        </item>
-        <item row="2" column="0" colspan="2">
-         <widget class="QLabel" name="label_56">
-          <property name="text">
-           <string>Moskau</string>
-          </property>
-         </widget>
-        </item>
-        <item row="3" column="0">
-         <widget class="QLCDNumber" name="lcdNumber_34"/>
-        </item>
-        <item row="3" column="1">
-         <widget class="QLCDNumber" name="lcdNumber_36"/>
-        </item>
-        <item row="3" column="2">
-         <widget class="QLCDNumber" name="lcdNumber_35"/>
-        </item>
-       </layout>
+       <widget class="QLabel" name="label_54">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>10</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Los Angeles</string>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_28">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>30</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_55">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Berlin</string>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_29">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>30</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_30">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>30</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_31">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>30</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_32">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>30</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_33">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>30</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_34">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>80</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_56">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>60</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Moskau</string>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_35">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>80</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_36">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>80</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
       </widget>
      </widget>
     </item>
@@ -789,7 +800,7 @@ font-color: rgb(0, 0, 0);</string>
      <x>0</x>
      <y>0</y>
      <width>382</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
