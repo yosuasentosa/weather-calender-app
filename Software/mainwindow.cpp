@@ -24,7 +24,6 @@ MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
-
     ui->setupUi(this);
     timerObj = new QTimer(this);//Timer für aktuelle Zeit einstellen
     connect(timerObj, SIGNAL(timeout()),this,SLOT(myfunction()));//verbindet die timer-Object mit die Funktion
@@ -71,6 +70,9 @@ MainWindow::~MainWindow()
 void MainWindow::onTabChanged(int tabIndex) {
     if (tabIndex == 5) {
     on_berlin_clicked();
+    }
+    else if (tabIndex ==0){
+        reqIP();
     }
 }
 //Alex
