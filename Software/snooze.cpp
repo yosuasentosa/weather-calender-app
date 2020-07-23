@@ -11,17 +11,16 @@ Snooze::Snooze(QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Snooze)
 {
+    //Objekte initialisieren
     ui->setupUi(this);
     timerObject = new QTimer(this);
     connect(timerObject, SIGNAL(timeout()),this,SLOT(timenow()));
     timerObject->start();
     timerdismiss = new QTimer(this);
-    //connect(timerdismiss,SIGNAL(timeout()), this, SLOT(on_dismissbtn_clicked()));
-    //timerdismiss->start(2000);
     music = new QMediaPlayer();
+    //der Alarmton einrichten
     music->setMedia(QUrl("qrc:/sound/alarmtone.mp3"));
     music->play();
-    //qrc:/sound/E:/vertiefungsproj/
 }
 
 Snooze::~Snooze()
@@ -29,12 +28,14 @@ Snooze::~Snooze()
     delete ui;
 }
 
+//beendet der Alarmton und schliess den Snoozefenster zu.
 void Snooze::terminatealarm()
 {
     music->stop();
     Snooze::close();
 }
 
+//initialisiert die aktuelle Zeit
 void Snooze::timenow()
 {
     QTime time = QTime::currentTime();
@@ -43,12 +44,7 @@ void Snooze::timenow()
 
 }
 
-//void Snooze::on_pushButton_2_clicked()
-//{
-//    music->stop();
-//    Snooze::close();
-//}
-
+//ruft die Funktion terminatealarm() auf
 void Snooze::on_dismissbtn_clicked()
 {
     terminatealarm();

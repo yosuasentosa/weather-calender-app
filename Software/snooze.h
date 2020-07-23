@@ -18,14 +18,17 @@ public:
     explicit Snooze(QWidget *parent = nullptr);
     ~Snooze();
     void terminatealarm();
+
+    //Funktion deklarieren
 public slots:
     void timenow();
 
+    //Slots deklarieren
 private slots:
-
-    void on_dismissbtn_clicked();
+   void on_dismissbtn_clicked();
 
 private:
+   //Variablen deklarieren
     Ui::Snooze *ui;
     QTimer *timerObject;
     QMediaPlayer *music;

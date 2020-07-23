@@ -17,7 +17,7 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
-    //Alex
+    //Sec und Min Object von Klasse QString deklarieren
         QString Sec;
         QString Min;
 
@@ -25,12 +25,11 @@ public:
 
 
 public slots:
+    //die Funktionen deklarieren
     void myfunction();
     void showsnooze();
     void snooze();
     void testalarm();
-
-    //Alex
     void myTimerfunc();
     void showTime();
 
@@ -57,46 +56,36 @@ private slots:
     void downloadWeltWetter(QNetworkReply*);
     void downloadIcon(QNetworkReply*);
     void downloadWeltIcon(QNetworkReply*);
-    //Alex
+
+    //Tasten und Objekte fürs GUI deklarieren
     void on_pushButtonalex_clicked();
     void on_startButton_clicked();
-
     void on_stopButton_clicked();
     void start();
     void terminate();
     void hourScreenUpdate(int i);
     void minuteScreenUpdate(int i);
     void secondScreenUpdate(int i);
-
     void on_startButton_3_clicked();
-
     void on_stopButton_3_clicked();
-
     void on_pushButtonalex_5_clicked();
     void onTabChanged(int);
-
-
     void on_jakarta_clicked();
-
     void on_berlin_clicked();
-
     void on_losangeles_clicked();
-
     void on_moskau_clicked();
 
 private:
+    //Variablen für die Timers deklarieren
     Ui::MainWindow *ui;
-    //Alex
      QTimer *myTimer;
      Counter *hours;
      Counter *minutes;
      Counter *seconds;
-
-
     QTimer *timerObj;
     QTimer *timertest;
     QTimer *timerAlarm;
     QString ipUrl ="http://ip-api.com/json/?fields=query,country,city";
 };
-//Test "Hallo"
+
 #endif // MAINWINDOW_H
