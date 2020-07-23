@@ -39,10 +39,11 @@ MainWindow::MainWindow(QWidget *parent)
     ui->testAlarmBtn->setEnabled(false);
 
 
-    //Alex
+    //Timer für Timer-Funktion initializieren und verbinden
     myTimer=new QTimer(this);
     connect(myTimer, SIGNAL(timeout()),this,SLOT(myTimerfunc()));
-    //Counter
+
+    //Counter initializieren und mit den Funktionen verbinden
     hours = new Counter(this,3600);
     minutes = new Counter(this,60);
     seconds = new Counter(this,1);
@@ -75,7 +76,7 @@ void MainWindow::onTabChanged(int tabIndex) {
         reqIP();
     }
 }
-//Alex
+//Logic für den Timer
 void MainWindow::myTimerfunc()
 {
     qDebug()<<"läuft..";
@@ -106,17 +107,20 @@ void MainWindow::myTimerfunc()
     ui->lcdsecc->display(Second);
 }
 
-
+//startet den Timer mit 1 Sec Interval
 void MainWindow::on_pushButtonalex_clicked()
 {
     myTimer->start(1000);
 }
 
+//startet die Counter-Funktionen
 void MainWindow::start(){
     hours->start();
     minutes->start();
     seconds->start();
 }
+
+//beendet die Counter-Funktionen
 void MainWindow::terminate(){
     hours->terminate();
     minutes->terminate();
@@ -134,6 +138,7 @@ void MainWindow::on_stopButton_clicked()
 {
     terminate();
 }
+
 void MainWindow::hourScreenUpdate(int i)
 {ui->hourScreen_3->display(i);}
 void MainWindow::minuteScreenUpdate(int i)
@@ -141,6 +146,7 @@ void MainWindow::minuteScreenUpdate(int i)
 void MainWindow::secondScreenUpdate(int i)
 {ui->secondScreen_3->display(i);}
 
+//Methoden um die Zeit anzuzeigen.
 void MainWindow::showTime()
 {
     QTime timeberlin=QTime::currentTime();
@@ -214,6 +220,7 @@ void MainWindow::on_pushButton_3_clicked()
     snooze();
 }
 
+//Snoozefenster wird angezeigt
 void MainWindow::showsnooze()
 {
     Snooze snooze;
@@ -221,6 +228,7 @@ void MainWindow::showsnooze()
     snooze.exec();
 }
 
+//Timer für snooze auf 5 mins gesetz
 void MainWindow::snooze()
 {
     connect(timertest, SIGNAL(timeout()), this, SLOT(showsnooze()));
@@ -242,12 +250,13 @@ void MainWindow::testalarm()
     }
 }
 
-
+//snooze testen
 void MainWindow::on_testAlarmBtn_clicked()
 {
     showsnooze();
 }
 
+//die Timers werden gestoppt
 void MainWindow::on_pushButton_4_clicked()
 {
     timertest->stop();
@@ -255,6 +264,7 @@ void MainWindow::on_pushButton_4_clicked()
     ui->label_3->setText("Alarm is currently deactivated");
 }
 
+//aktiviert das Alarm und ruft die Funktion-Testalarm
 void MainWindow::on_pushButton_5_clicked()
 {
     connect(timerAlarm, SIGNAL(timeout()), this, SLOT(testalarm()));
