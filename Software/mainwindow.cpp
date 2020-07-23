@@ -50,7 +50,6 @@ void MainWindow::myfunction()
     QTime time = QTime::currentTime();
     QString time_string = time.toString("hh : mm : ss");
     QString time_string1 = time.toString("hh.mm");
-    ui->label->setText(time_string);
     ui->label_2->setText(time_string);
 
 }
@@ -80,7 +79,7 @@ void MainWindow::on_removebutton_clicked()
     ui->pushButton_5->setEnabled(false);
     ui->removebutton->setEnabled(false);
     ui->testAlarmBtn->setEnabled(false);
-    ui->label_3->setText("Alarm is currently deactivated");
+    ui->label_3->setText("Alarm ist darzeit deaktiviert");
 }
 
 //TestSnooze
@@ -134,7 +133,7 @@ void MainWindow::on_pushButton_5_clicked()
 {
     connect(timerAlarm, SIGNAL(timeout()), this, SLOT(testalarm()));
     timerAlarm->start(1000);
-    ui->label_3->setText("Alarm is activated");
+    ui->label_3->setText("Alarm ist aktiviert");
 }
 void MainWindow::reqIP(){
     QNetworkAccessManager *man = new QNetworkAccessManager(this);
