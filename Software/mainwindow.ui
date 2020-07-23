@@ -226,7 +226,10 @@
        </attribute>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of aee8c91... ui
        <widget class="QLabel" name="label_8">
         <property name="geometry">
          <rect>
@@ -250,6 +253,9 @@
          </rect>
         </property>
        </widget>
+<<<<<<< HEAD
+>>>>>>> parent of aee8c91... ui
+=======
 >>>>>>> parent of aee8c91... ui
        <widget class="QLabel" name="label_10">
         <property name="geometry">
@@ -301,7 +307,10 @@
         </property>
        </widget>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of aee8c91... ui
        <widget class="QLCDNumber" name="lcdhours">
         <property name="geometry">
          <rect>
@@ -312,6 +321,9 @@
          </rect>
         </property>
        </widget>
+<<<<<<< HEAD
+>>>>>>> parent of aee8c91... ui
+=======
 >>>>>>> parent of aee8c91... ui
        <widget class="QLabel" name="label_11">
         <property name="geometry">
@@ -337,7 +349,10 @@
         </property>
        </widget>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of aee8c91... ui
        <widget class="QLabel" name="label_30">
         <property name="geometry">
          <rect>
@@ -351,6 +366,9 @@
          <string>Hours:</string>
         </property>
        </widget>
+<<<<<<< HEAD
+>>>>>>> parent of aee8c91... ui
+=======
 >>>>>>> parent of aee8c91... ui
        <widget class="QLCDNumber" name="lcdmin">
         <property name="geometry">
@@ -401,6 +419,7 @@
          <string>stop</string>
         </property>
        </widget>
+<<<<<<< HEAD
 <<<<<<< HEAD
 =======
        <layout class="QGridLayout" name="gridLayout_3">
@@ -486,6 +505,8 @@
 >>>>>>> aee8c91bae9e241946f3c59dc5f6dc3a823f6095
 =======
 >>>>>>> parent of aee8c91... ui
+=======
+>>>>>>> parent of aee8c91... ui
       </widget>
       <widget class="QWidget" name="tab_3">
        <attribute name="title">
@@ -493,6 +514,9 @@
        </attribute>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of aee8c91... ui
 =======
 >>>>>>> parent of aee8c91... ui
        <widget class="QLabel" name="minutesLabel_3">
@@ -519,7 +543,11 @@
         </property>
         <property name="text">
 <<<<<<< HEAD
+<<<<<<< HEAD
          <string>start</string>
+=======
+         <string>start/pause</string>
+>>>>>>> parent of aee8c91... ui
 =======
          <string>start/pause</string>
 >>>>>>> parent of aee8c91... ui
@@ -595,6 +623,7 @@
         </property>
        </widget>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
        <layout class="QGridLayout" name="gridLayout_4">
         <item row="0" column="0">
@@ -643,6 +672,8 @@
         </item>
        </layout>
 >>>>>>> aee8c91bae9e241946f3c59dc5f6dc3a823f6095
+=======
+>>>>>>> parent of aee8c91... ui
 =======
 >>>>>>> parent of aee8c91... ui
       </widget>
