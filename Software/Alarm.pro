@@ -23,6 +23,7 @@ SOURCES += \
     snooze.cpp
 
 HEADERS += \
+    counter.h \
     mainwindow.h \
     snooze.h
 

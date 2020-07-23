@@ -4,7 +4,8 @@
 #include <QMainWindow>
 #include <QNetworkAccessManager>
 #include <QNetworkReply>
-
+#include "counter.h"
+#include "ui_mainwindow.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -16,11 +17,22 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    //Alex
+        QString Sec;
+        QString Min;
+
+
+
+
 public slots:
     void myfunction();
     void showsnooze();
     void snooze();
     void testalarm();
+
+    //Alex
+    void myTimerfunc();
+    void showTime();
 
 private slots:
     void on_addButton_clicked();
@@ -39,9 +51,32 @@ private slots:
     void downloadIpFinished(QNetworkReply*);
     void downloadWetter(QNetworkReply*);
     void downloadIcon(QNetworkReply*);
+    //Alex
+    void on_pushButtonalex_clicked();
+    void on_startButton_clicked();
+
+    void on_stopButton_clicked();
+    void start();
+    void terminate();
+    void hourScreenUpdate(int i);
+    void minuteScreenUpdate(int i);
+    void secondScreenUpdate(int i);
+
+    void on_startButton_3_clicked();
+
+    void on_stopButton_3_clicked();
+
+    void on_pushButtonalex_5_clicked();
 
 private:
     Ui::MainWindow *ui;
+    //Alex
+     QTimer *myTimer;
+     Counter *hours;
+     Counter *minutes;
+     Counter *seconds;
+
+
     QTimer *timerObj;
     QTimer *timertest;
     QTimer *timerAlarm;

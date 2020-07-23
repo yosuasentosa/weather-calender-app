@@ -45,7 +45,7 @@
        </sizepolicy>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <widget class="QWidget" name="Wetter">
        <attribute name="title">
@@ -196,6 +196,412 @@
         </item>
        </layout>
       </widget>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Timer</string>
+       </attribute>
+       <widget class="QLabel" name="label_8">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>80</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hours:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_5">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>100</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_10">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>80</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Seconds:</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_7">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>80</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Minutes:</string>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox_2">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>100</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+        <property name="buttonSymbols">
+         <enum>QAbstractSpinBox::UpDownArrows</enum>
+        </property>
+       </widget>
+       <widget class="QSpinBox" name="spinBox">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>100</y>
+          <width>51</width>
+          <height>22</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdhours">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>30</y>
+          <width>64</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_11">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>10</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Minutes:</string>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdsecc">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>30</y>
+          <width>64</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_30">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>10</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hours:</string>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdmin">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>30</y>
+          <width>64</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonalex">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>70</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>start</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_12">
+        <property name="geometry">
+         <rect>
+          <x>280</x>
+          <y>10</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Seconds:</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="pushButtonalex_5">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>110</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>stop</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Stoppuhr</string>
+       </attribute>
+       <widget class="QLabel" name="minutesLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>0</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Minutes</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="startButton_3">
+        <property name="geometry">
+         <rect>
+          <x>40</x>
+          <y>90</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>start/pause</string>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="minuteScreen_3">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>30</y>
+          <width>64</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="hourScreen_3">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>30</y>
+          <width>64</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="stopButton_3">
+        <property name="geometry">
+         <rect>
+          <x>190</x>
+          <y>90</y>
+          <width>93</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>stop</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="secondsLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>0</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Seconds</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="hoursLabel_3">
+        <property name="geometry">
+         <rect>
+          <x>60</x>
+          <y>0</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Hours</string>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="secondScreen_3">
+        <property name="geometry">
+         <rect>
+          <x>240</x>
+          <y>30</y>
+          <width>64</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>Weltuhr</string>
+       </attribute>
+       <widget class="QLabel" name="label_54">
+        <property name="geometry">
+         <rect>
+          <x>180</x>
+          <y>10</y>
+          <width>71</width>
+          <height>20</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Los Angeles</string>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_28">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>30</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_55">
+        <property name="geometry">
+         <rect>
+          <x>70</x>
+          <y>10</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Berlin</string>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_29">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>30</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_30">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>30</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_31">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>30</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_32">
+        <property name="geometry">
+         <rect>
+          <x>170</x>
+          <y>30</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_33">
+        <property name="geometry">
+         <rect>
+          <x>250</x>
+          <y>30</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_34">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>80</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_56">
+        <property name="geometry">
+         <rect>
+          <x>50</x>
+          <y>60</y>
+          <width>55</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Moskau</string>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_35">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>80</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+       <widget class="QLCDNumber" name="lcdNumber_36">
+        <property name="geometry">
+         <rect>
+          <x>90</x>
+          <y>80</y>
+          <width>31</width>
+          <height>23</height>
+         </rect>
+        </property>
+       </widget>
+      </widget>
      </widget>
     </item>
     <item>
@@ -216,7 +622,7 @@
      <x>0</x>
      <y>0</y>
      <width>382</width>
-     <height>21</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>

@@ -13,7 +13,7 @@
 #include <QMediaPlayer>
 #include <QJsonDocument>
 #include <QJsonObject>
-
+#include "counter.h"
 
 QString ipCity;
 
@@ -36,6 +36,22 @@ MainWindow::MainWindow(QWidget *parent)
     ui->removebutton->setEnabled(false);
     ui->testAlarmBtn->setEnabled(false);
 
+
+    //Alex
+    myTimer=new QTimer(this);
+    connect(myTimer, SIGNAL(timeout()),this,SLOT(myTimerfunc()));
+    //Counter
+    hours = new Counter(this,3600);
+    minutes = new Counter(this,60);
+    seconds = new Counter(this,1);
+    connect(hours,SIGNAL(countChanges(int)), this, SLOT(hourScreenUpdate(int)));
+    connect(minutes,SIGNAL(countChanges(int)), this, SLOT(minuteScreenUpdate(int)));
+    connect(seconds,SIGNAL(countChanges(int)), this, SLOT(secondScreenUpdate(int)) );
+    QTimer * timer_1=new QTimer(this);
+    connect(timer_1, SIGNAL(timeout()),this,SLOT(showTime()));
+    timer_1->start();
+
+
     reqIP();
 }
 
@@ -43,6 +59,112 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+//Alex
+void MainWindow::myTimerfunc()
+{
+    qDebug()<<"läuft..";
+
+    static int Second=ui->spinBox_2->text().toInt();
+    static int Minute=ui->spinBox->text().toInt();
+    static int Hours=ui->spinBox_5->text().toInt();
+
+    if(Second==0){
+
+        Second=60;
+        Minute--;
+
+    }
+
+    if(Minute==60){
+
+        Minute=60;
+        Hours--;
+
+    }
+
+    Second--;
+
+    Sec=Second;
+    Min=Minute;
+
+
+
+    ui->lcdmin->display(Minute);
+    ui->lcdsecc->display(Second);
+    ui->lcdhours->display(Hours);
+
+}
+
+
+void MainWindow::on_pushButtonalex_clicked()
+{
+
+
+
+    myTimer->start(1000);
+
+
+
+}
+
+void MainWindow::start(){
+    hours->start();
+    minutes->start();
+    seconds->start();
+}
+void MainWindow::terminate(){
+    hours->terminate();
+    minutes->terminate();
+    seconds->terminate();
+}
+
+void MainWindow::on_startButton_clicked()
+{
+
+    start();
+
+}
+
+void MainWindow::on_stopButton_clicked()
+{
+    terminate();
+}
+void MainWindow::hourScreenUpdate(int i)
+{ui->hourScreen_3->display(i);}
+void MainWindow::minuteScreenUpdate(int i)
+{ui->minuteScreen_3->display(i);}
+void MainWindow::secondScreenUpdate(int i)
+{ui->secondScreen_3->display(i);}
+
+void MainWindow::showTime()
+{
+    QTime timeberlin=QTime::currentTime();
+    QString time_textberlin=timeberlin.toString("hh: mm: ss");
+    //ui->label_b->setText(time_textberlin);
+
+
+    int h=timeberlin.hour();
+    int m=timeberlin.minute();
+    int s=timeberlin.second();
+    ui->lcdNumber_34->display(h+1);
+    ui->lcdNumber_36->display(m);
+    ui->lcdNumber_35->display(s);
+
+    ui->lcdNumber_28->display(h);
+    ui->lcdNumber_31->display(m);
+    ui->lcdNumber_30->display(s);
+
+    ui->lcdNumber_32->display(h-9);
+    ui->lcdNumber_29->display(m);
+    ui->lcdNumber_33->display(s);
+
+
+
+}
+
+
+
 
 //Funktion für aktuelle Zeit
 void MainWindow::myfunction()
@@ -190,4 +312,24 @@ void MainWindow::downloadIcon(QNetworkReply *reply){
     icon.loadFromData(reply->readAll());
     ui->iconLabel->setPixmap(icon);
     ui->iconLabel->setScaledContents(true);
+}
+
+void MainWindow::on_startButton_3_clicked()
+{
+    start();
+}
+
+void MainWindow::on_stopButton_3_clicked()
+{
+    terminate();
+}
+
+void MainWindow::on_pushButtonalex_5_clicked()
+{
+    ui->lcdmin->display(0);
+    ui->lcdsecc->display(0);
+    ui->lcdhours->display(0);
+
+myTimer->stop();
+
 }
