@@ -22,6 +22,7 @@ MainWindow::MainWindow(QWidget *parent)
     , ui(new Ui::MainWindow)
 {
 
+
     ui->setupUi(this);
     timerObj = new QTimer(this);//Timer für aktuelle Zeit einstellen
     connect(timerObj, SIGNAL(timeout()),this,SLOT(myfunction()));//verbindet die timer-Object mit die Funktion
@@ -40,6 +41,7 @@ MainWindow::MainWindow(QWidget *parent)
     //Alex
     myTimer=new QTimer(this);
     connect(myTimer, SIGNAL(timeout()),this,SLOT(myTimerfunc()));
+
     //Counter
     hours = new Counter(this,3600);
     minutes = new Counter(this,60);
@@ -60,14 +62,15 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
+
 //Alex
 void MainWindow::myTimerfunc()
 {
     qDebug()<<"läuft..";
 
-    static int Second=ui->spinBox_2->text().toInt();
-    static int Minute=ui->spinBox->text().toInt();
-    static int Hours=ui->spinBox_5->text().toInt();
+
+   static int Second=ui->spinBox_2->text().toInt();
+   static int Minute=ui->spinBox->text().toInt();
 
     if(Second==0){
 
@@ -79,20 +82,22 @@ void MainWindow::myTimerfunc()
     if(Minute==60){
 
         Minute=60;
-        Hours--;
+
 
     }
 
+
     Second--;
 
-    Sec=Second;
-    Min=Minute;
+   Sec=Second;
+   Min=Minute;
 
 
 
     ui->lcdmin->display(Minute);
     ui->lcdsecc->display(Second);
-    ui->lcdhours->display(Hours);
+
+
 
 }
 
@@ -328,8 +333,11 @@ void MainWindow::on_pushButtonalex_5_clicked()
 {
     ui->lcdmin->display(0);
     ui->lcdsecc->display(0);
-    ui->lcdhours->display(0);
 
+ui->spinBox->setValue(0);
+ui->spinBox_2->setValue(0);
 myTimer->stop();
+
+
 
 }

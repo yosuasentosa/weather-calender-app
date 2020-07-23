@@ -6,6 +6,7 @@
 #include <QNetworkReply>
 #include "counter.h"
 #include "ui_mainwindow.h"
+
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
@@ -72,9 +73,11 @@ private:
     Ui::MainWindow *ui;
     //Alex
      QTimer *myTimer;
+
      Counter *hours;
      Counter *minutes;
      Counter *seconds;
+
 
 
     QTimer *timerObj;
