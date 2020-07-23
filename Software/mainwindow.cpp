@@ -53,6 +53,9 @@ MainWindow::MainWindow(QWidget *parent)
 
 
     reqIP();
+    QTimer *timer = new QTimer(this);
+    connect(timer, SIGNAL(timeout()), this, SLOT(reqIP()));
+    timer->start(3600000);
 }
 
 MainWindow::~MainWindow()
@@ -282,7 +285,6 @@ void MainWindow::downloadIpFinished(QNetworkReply* reply){
 
 void MainWindow::downloadWetter(QNetworkReply *reply){
     QString replyText = reply->readAll();
-    qDebug() << replyText;
     QJsonDocument repDoc = QJsonDocument::fromJson(replyText.toUtf8());
     QJsonObject repObj = repDoc.object();
     QJsonValue repValue = repObj.value(QString("weather"));

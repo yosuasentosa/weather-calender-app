@@ -58,3 +58,5 @@ compile_commands.json
 GeoIp/GeoIp.pro.user
 GeoIp/GeoIp.pro.user
 Software/Alarm.pro.user
+Software/Alarm.pro.user
+*.user

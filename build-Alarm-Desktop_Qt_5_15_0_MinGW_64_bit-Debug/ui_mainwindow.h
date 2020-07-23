@@ -12,7 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCalendarWidget>
-#include <QtWidgets/QFrame>
+#include <QtWidgets/QGridLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QListWidget>
 #include <QtWidgets/QMainWindow>
@@ -22,6 +22,7 @@
 #include <QtWidgets/QTabWidget>
 #include <QtWidgets/QTextEdit>
 #include <QtWidgets/QTimeEdit>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -30,26 +31,25 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QVBoxLayout *verticalLayout;
     QTabWidget *tabWidget;
-    QWidget *tab;
-    QLabel *label_2;
-    QWidget *tab_2;
-    QLabel *label;
-    QPushButton *pushButton;
-    QPushButton *pushButton_2;
-    QFrame *frame;
-    QListWidget *listWidget;
-    QPushButton *removebutton;
-    QPushButton *addButton;
-    QLabel *labeldatetime;
-    QPushButton *pushButton_3;
-    QTimeEdit *timeEdit;
-    QPushButton *testAlarmBtn;
-    QPushButton *pushButton_4;
-    QPushButton *pushButton_5;
-    QLabel *label_3;
+    QWidget *Wetter;
+    QGridLayout *gridLayout_2;
     QTextEdit *wetterText;
+    QLabel *label_2;
     QLabel *iconLabel;
+    QWidget *tab_2;
+    QGridLayout *gridLayout;
+    QPushButton *testAlarmBtn;
+    QLabel *labeldatetime;
+    QPushButton *pushButton_5;
+    QListWidget *listWidget;
+    QTimeEdit *timeEdit;
+    QLabel *label_3;
+    QPushButton *addButton;
+    QPushButton *pushButton_4;
+    QPushButton *pushButton_3;
+    QPushButton *removebutton;
     QCalendarWidget *calendarWidget;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -58,29 +58,48 @@ public:
     {
         if (MainWindow->objectName().isEmpty())
             MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
-        MainWindow->resize(800, 600);
-        MainWindow->setMinimumSize(QSize(800, 600));
-        MainWindow->setMaximumSize(QSize(800, 600));
-        centralwidget = new QWidget(MainWindow);
-        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
-        tabWidget = new QTabWidget(centralwidget);
-        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
-        tabWidget->setGeometry(QRect(20, 10, 361, 201));
+        MainWindow->setEnabled(true);
+        MainWindow->resize(382, 600);
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(0);
         sizePolicy.setVerticalStretch(0);
+        sizePolicy.setHeightForWidth(MainWindow->sizePolicy().hasHeightForWidth());
+        MainWindow->setSizePolicy(sizePolicy);
+        MainWindow->setMinimumSize(QSize(382, 600));
+        MainWindow->setMaximumSize(QSize(16777215, 16777215));
+        centralwidget = new QWidget(MainWindow);
+        centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
+        verticalLayout = new QVBoxLayout(centralwidget);
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        tabWidget = new QTabWidget(centralwidget);
+        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
         sizePolicy.setHeightForWidth(tabWidget->sizePolicy().hasHeightForWidth());
         tabWidget->setSizePolicy(sizePolicy);
-        tab = new QWidget();
-        tab->setObjectName(QString::fromUtf8("tab"));
-        label_2 = new QLabel(tab);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(0, 10, 341, 151));
-        QSizePolicy sizePolicy1(QSizePolicy::Expanding, QSizePolicy::Expanding);
+        tabWidget->setMinimumSize(QSize(364, 196));
+        Wetter = new QWidget();
+        Wetter->setObjectName(QString::fromUtf8("Wetter"));
+        gridLayout_2 = new QGridLayout(Wetter);
+        gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        wetterText = new QTextEdit(Wetter);
+        wetterText->setObjectName(QString::fromUtf8("wetterText"));
+        QSizePolicy sizePolicy1(QSizePolicy::Preferred, QSizePolicy::Ignored);
         sizePolicy1.setHorizontalStretch(0);
         sizePolicy1.setVerticalStretch(0);
-        sizePolicy1.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
-        label_2->setSizePolicy(sizePolicy1);
+        sizePolicy1.setHeightForWidth(wetterText->sizePolicy().hasHeightForWidth());
+        wetterText->setSizePolicy(sizePolicy1);
+        wetterText->setMinimumSize(QSize(256, 102));
+        wetterText->setContextMenuPolicy(Qt::CustomContextMenu);
+        wetterText->setAutoFillBackground(true);
+        wetterText->setStyleSheet(QString::fromUtf8("background-color: rgb();"));
+        wetterText->setFrameShape(QFrame::NoFrame);
+        wetterText->setReadOnly(true);
+
+        gridLayout_2->addWidget(wetterText, 1, 0, 1, 1);
+
+        label_2 = new QLabel(Wetter);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        sizePolicy.setHeightForWidth(label_2->sizePolicy().hasHeightForWidth());
+        label_2->setSizePolicy(sizePolicy);
         QFont font;
         font.setPointSize(26);
         font.setBold(true);
@@ -89,90 +108,95 @@ public:
         label_2->setScaledContents(false);
         label_2->setAlignment(Qt::AlignCenter);
         label_2->setWordWrap(false);
-        tabWidget->addTab(tab, QString());
+
+        gridLayout_2->addWidget(label_2, 0, 0, 1, 2);
+
+        iconLabel = new QLabel(Wetter);
+        iconLabel->setObjectName(QString::fromUtf8("iconLabel"));
+        sizePolicy1.setHeightForWidth(iconLabel->sizePolicy().hasHeightForWidth());
+        iconLabel->setSizePolicy(sizePolicy1);
+        iconLabel->setStyleSheet(QString::fromUtf8("background-color: rgb();"));
+        iconLabel->setScaledContents(true);
+        iconLabel->setAlignment(Qt::AlignCenter);
+
+        gridLayout_2->addWidget(iconLabel, 1, 1, 1, 1);
+
+        tabWidget->addTab(Wetter, QString());
         tab_2 = new QWidget();
         tab_2->setObjectName(QString::fromUtf8("tab_2"));
-        label = new QLabel(tab_2);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(10, 10, 341, 91));
-        QFont font1;
-        font1.setPointSize(28);
-        font1.setBold(true);
-        font1.setWeight(75);
-        label->setFont(font1);
-        pushButton = new QPushButton(tab_2);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(10, 110, 75, 23));
-        pushButton_2 = new QPushButton(tab_2);
-        pushButton_2->setObjectName(QString::fromUtf8("pushButton_2"));
-        pushButton_2->setGeometry(QRect(100, 110, 75, 23));
-        tabWidget->addTab(tab_2, QString());
-        frame = new QFrame(centralwidget);
-        frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(390, 10, 401, 531));
-        frame->setMinimumSize(QSize(401, 531));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
-        listWidget = new QListWidget(frame);
-        listWidget->setObjectName(QString::fromUtf8("listWidget"));
-        listWidget->setGeometry(QRect(20, 200, 361, 21));
-        removebutton = new QPushButton(frame);
-        removebutton->setObjectName(QString::fromUtf8("removebutton"));
-        removebutton->setGeometry(QRect(20, 230, 111, 31));
-        addButton = new QPushButton(frame);
-        addButton->setObjectName(QString::fromUtf8("addButton"));
-        addButton->setGeometry(QRect(250, 120, 111, 31));
-        labeldatetime = new QLabel(frame);
+        gridLayout = new QGridLayout(tab_2);
+        gridLayout->setObjectName(QString::fromUtf8("gridLayout"));
+        testAlarmBtn = new QPushButton(tab_2);
+        testAlarmBtn->setObjectName(QString::fromUtf8("testAlarmBtn"));
+
+        gridLayout->addWidget(testAlarmBtn, 3, 5, 1, 1);
+
+        labeldatetime = new QLabel(tab_2);
         labeldatetime->setObjectName(QString::fromUtf8("labeldatetime"));
-        labeldatetime->setGeometry(QRect(20, 130, 81, 16));
         QSizePolicy sizePolicy2(QSizePolicy::Ignored, QSizePolicy::Ignored);
         sizePolicy2.setHorizontalStretch(0);
         sizePolicy2.setVerticalStretch(0);
         sizePolicy2.setHeightForWidth(labeldatetime->sizePolicy().hasHeightForWidth());
         labeldatetime->setSizePolicy(sizePolicy2);
         labeldatetime->setScaledContents(true);
-        pushButton_3 = new QPushButton(frame);
-        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
-        pushButton_3->setGeometry(QRect(150, 230, 111, 31));
-        timeEdit = new QTimeEdit(frame);
-        timeEdit->setObjectName(QString::fromUtf8("timeEdit"));
-        timeEdit->setGeometry(QRect(110, 120, 121, 31));
-        testAlarmBtn = new QPushButton(frame);
-        testAlarmBtn->setObjectName(QString::fromUtf8("testAlarmBtn"));
-        testAlarmBtn->setGeometry(QRect(270, 230, 111, 31));
-        pushButton_4 = new QPushButton(frame);
-        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
-        pushButton_4->setGeometry(QRect(110, 160, 91, 31));
-        pushButton_5 = new QPushButton(frame);
+
+        gridLayout->addWidget(labeldatetime, 0, 0, 1, 1);
+
+        pushButton_5 = new QPushButton(tab_2);
         pushButton_5->setObjectName(QString::fromUtf8("pushButton_5"));
-        pushButton_5->setGeometry(QRect(20, 160, 81, 31));
-        label_3 = new QLabel(frame);
+
+        gridLayout->addWidget(pushButton_5, 1, 0, 1, 1);
+
+        listWidget = new QListWidget(tab_2);
+        listWidget->setObjectName(QString::fromUtf8("listWidget"));
+
+        gridLayout->addWidget(listWidget, 2, 0, 1, 6);
+
+        timeEdit = new QTimeEdit(tab_2);
+        timeEdit->setObjectName(QString::fromUtf8("timeEdit"));
+
+        gridLayout->addWidget(timeEdit, 0, 1, 1, 3);
+
+        label_3 = new QLabel(tab_2);
         label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(220, 160, 151, 31));
-        wetterText = new QTextEdit(frame);
-        wetterText->setObjectName(QString::fromUtf8("wetterText"));
-        wetterText->setGeometry(QRect(10, 20, 191, 91));
-        QSizePolicy sizePolicy3(QSizePolicy::Fixed, QSizePolicy::Fixed);
-        sizePolicy3.setHorizontalStretch(0);
-        sizePolicy3.setVerticalStretch(0);
-        sizePolicy3.setHeightForWidth(wetterText->sizePolicy().hasHeightForWidth());
-        wetterText->setSizePolicy(sizePolicy3);
-        wetterText->setAutoFillBackground(true);
-        wetterText->setStyleSheet(QString::fromUtf8("background-color: rgb();"));
-        wetterText->setFrameShape(QFrame::NoFrame);
-        iconLabel = new QLabel(frame);
-        iconLabel->setObjectName(QString::fromUtf8("iconLabel"));
-        iconLabel->setGeometry(QRect(210, 10, 181, 101));
-        iconLabel->setStyleSheet(QString::fromUtf8("background-color: rgb();"));
-        iconLabel->setScaledContents(true);
-        iconLabel->setAlignment(Qt::AlignCenter);
+
+        gridLayout->addWidget(label_3, 1, 3, 1, 3);
+
+        addButton = new QPushButton(tab_2);
+        addButton->setObjectName(QString::fromUtf8("addButton"));
+
+        gridLayout->addWidget(addButton, 0, 4, 1, 2);
+
+        pushButton_4 = new QPushButton(tab_2);
+        pushButton_4->setObjectName(QString::fromUtf8("pushButton_4"));
+
+        gridLayout->addWidget(pushButton_4, 1, 1, 1, 2);
+
+        pushButton_3 = new QPushButton(tab_2);
+        pushButton_3->setObjectName(QString::fromUtf8("pushButton_3"));
+
+        gridLayout->addWidget(pushButton_3, 3, 2, 1, 3);
+
+        removebutton = new QPushButton(tab_2);
+        removebutton->setObjectName(QString::fromUtf8("removebutton"));
+
+        gridLayout->addWidget(removebutton, 3, 0, 1, 2);
+
+        tabWidget->addTab(tab_2, QString());
+
+        verticalLayout->addWidget(tabWidget);
+
         calendarWidget = new QCalendarWidget(centralwidget);
         calendarWidget->setObjectName(QString::fromUtf8("calendarWidget"));
-        calendarWidget->setGeometry(QRect(20, 230, 361, 311));
+        sizePolicy.setHeightForWidth(calendarWidget->sizePolicy().hasHeightForWidth());
+        calendarWidget->setSizePolicy(sizePolicy);
+
+        verticalLayout->addWidget(calendarWidget);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName(QString::fromUtf8("menubar"));
-        menubar->setGeometry(QRect(0, 0, 800, 21));
+        menubar->setGeometry(QRect(0, 0, 382, 21));
         MainWindow->setMenuBar(menubar);
         statusbar = new QStatusBar(MainWindow);
         statusbar->setObjectName(QString::fromUtf8("statusbar"));
@@ -190,20 +214,17 @@ public:
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
         label_2->setText(QCoreApplication::translate("MainWindow", "00:00:00", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab), QCoreApplication::translate("MainWindow", "Tab 1", nullptr));
-        label->setText(QCoreApplication::translate("MainWindow", "00:00:00", nullptr));
-        pushButton->setText(QCoreApplication::translate("MainWindow", "Start", nullptr));
-        pushButton_2->setText(QCoreApplication::translate("MainWindow", "Reset", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "Tab 2", nullptr));
-        removebutton->setText(QCoreApplication::translate("MainWindow", "Remove", nullptr));
-        addButton->setText(QCoreApplication::translate("MainWindow", "Add", nullptr));
-        labeldatetime->setText(QCoreApplication::translate("MainWindow", "Date and Time", nullptr));
-        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Test Snooze", nullptr));
-        testAlarmBtn->setText(QCoreApplication::translate("MainWindow", "Test Alarm", nullptr));
-        pushButton_4->setText(QCoreApplication::translate("MainWindow", "TurnOff Snooze", nullptr));
-        pushButton_5->setText(QCoreApplication::translate("MainWindow", "Activate Alarm", nullptr));
-        label_3->setText(QCoreApplication::translate("MainWindow", "Alarm is currently deactivated", nullptr));
         iconLabel->setText(QCoreApplication::translate("MainWindow", "iconLabel", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(Wetter), QCoreApplication::translate("MainWindow", "Wetter", nullptr));
+        testAlarmBtn->setText(QCoreApplication::translate("MainWindow", "Alarm testen", nullptr));
+        labeldatetime->setText(QCoreApplication::translate("MainWindow", "Date and Time", nullptr));
+        pushButton_5->setText(QCoreApplication::translate("MainWindow", "Alarm einschalten", nullptr));
+        label_3->setText(QCoreApplication::translate("MainWindow", "Alarm ist darzeit deaktiviert", nullptr));
+        addButton->setText(QCoreApplication::translate("MainWindow", "Hinzuf\303\274gen", nullptr));
+        pushButton_4->setText(QCoreApplication::translate("MainWindow", "Schlummer ausschalten", nullptr));
+        pushButton_3->setText(QCoreApplication::translate("MainWindow", "Schlummer testen", nullptr));
+        removebutton->setText(QCoreApplication::translate("MainWindow", "Entfernen", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_2), QCoreApplication::translate("MainWindow", "Alarm", nullptr));
     } // retranslateUi
 
 };
